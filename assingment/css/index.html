@@ -1,65 +1,250 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="normalize.css">
-    <title>Absolute In Advance</title>
+    <title>Measurement Units in CSS</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normal.css">
     <style>
-        div:first-child {
-            width: 50vw;
-            height: 50vh;
-            background: yellow;
-            position: absolute;
-            left: 0%;
-            bottom: 0%;
-        }
-
-        div>div {
-            border: ra
-        }
-
-        div:nth-child(2) {
-            width: 50vw;
-            height: 50vh;
+        div:first-child{
+            width:50vw;
+            height:50vh;
             background: red;
             display: inline-block;
             position: absolute;
             left: 0%;
             top: 0%;
         }
-
-        div:nth-child(3) {
-            width: 50vw;
-            height: 50vh;
-            background: green;
+        div:first-child>div:first-child{
+            background-color: white;
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            margin: auto;
             position: absolute;
+            left: 0%;
             right: 0%;
             top: 0%;
-        }
-
-        div:nth-child(4) {
-            width: 50vw;
-            height: 50vh;
-            background: deeppink;
-            position: absolute;
-            right: 0%;
             bottom: 0%;
         }
+        div:first-child>div:nth-child(2){
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(3){
+            width:50vw;
+            height:50vh;
+            background: yellow;
+            display: inline-block;
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(3)>div:first-child{
+            background-color: white;
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(3)>div:nth-child(2){
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(2){
+            width:50vw;
+            height:50vh;
+            background: green;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+        }
+        div:nth-child(2)>div:first-child{
+            background-color: white;
+            width: 140px;
+            height: 140px;
+            border-radius: 100px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(2)>div:nth-child(2){
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(4){
+            width:50vw;
+            height:50vh;
+            background: deeppink;
+            display: inline-block;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+        }
+        div:nth-child(4)>div:first-child{
+            background-color: white;
+            width: 140px;
+            height: 140px;
+            border-radius: 70px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(4)>div:nth-child(2){
+            background-color: red;
+            width: 50px;
+            height: 50px;
+            margin: auto;
+            position: absolute;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(5){
+            background-color: white;
+            display: inline-block;
+            position: absolute;
+            margin: auto;
+            width:140px;
+            height: 140px;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(5)>div{
+            width: 70px;
+            height: 70px;
+            border-radius: 300px;
+            position: absolute;
+            margin: auto;
+            left: 0%;
+            right: 0%;
+            top: 0%;
+            bottom: 0%;
+        }
+        div:nth-child(6){
+            background: white;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            border-bottom-right-radius: 140px;
+        }
+        div:nth-child(7){
+            background: white;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            right: 0%;
+            border-bottom-left-radius: 140px;
+        }
+        div:nth-child(8){
+            background: white;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            bottom: 0%;
+            border-top-right-radius: 140px;
+        }
+        div:nth-child(9){
+            background: white;
+            width: 70px;
+            height: 70px;
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+            border-top-left-radius: 140px;
+        }
+        div:nth-child(10){
+
+            background: white;
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            top: -70px;
+            left: 0%;
+            right: 0%;
+            margin: auto;
+            border-radius: 70px;
+        }
+        div:nth-child(11){
+
+            background: white;
+            width: 140px;
+            height: 140px;
+            position: absolute;
+            bottom: -70px;
+            left: 0%;
+            right: 0%;
+            margin: auto;
+            border-radius: 70px;
+        }
+
     </style>
 </head>
 
 <body>
+<div>
+    <div> </div>
+    <div></div>
+</div>
+<div>
+    <div> </div>
+    <div></div>
+</div>
+<div>
+    <div> </div>
+    <div></div>
+</div>
+<div>
+    <div> </div>
+    <div></div>
+</div>
+<div>
     <div>
-        <div>
 
-        </div>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-
+</div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
+<div></div>
 </body>
 
 </html>
