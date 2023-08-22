@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Measurement Units in CSS</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="assets/normalize.css">
+    <style>
+        /* header start*/
+        header {
+            inline-size: 100%;
+            block-size: 70px;
+            position: relative;
+        }
+
+        header>div.frist {
+            inset-inline-start: 2px;
+            min-block-size: 100%;
+            max-block-size: 100%;
+
+        }
+
+        header>div>img {
+            position: absolute;
+            inset-inline-start: 2vw;
+            min-block-size: 100%;
+            max-block-size: 100%;
+        }
+
+        header>div>div>ul>li {
+            font-family: 'Roboto', Arial, sans-serif;
+            display: inline-block;
+            margin-inline-end: 15px;
+        }
+
+        header>div>div.second {
+            text-align: end;
+            inline-size: fit-content;
+            margin-inline-end: 10px;
+            margin-block-start: 9px;
+            position: absolute;
+            inset-inline-end: 0%;
+        }
+
+        /* header end*/
+        /*first section start*/
+        main {
+            position: relative;
+            margin: 0;
+        }
+
+        main>section:first-child>nav {
+            position: absolute;
+            background-color: #570195;
+            width: 23%;
+            block-size: 100%;
+            color: white;
+        }
+
+        main>section:first-child>nav>ul>li {
+            padding-inline-start: 10px;
+            padding-block-start: 20px;
+            font-family: 'Roboto', Arial, sans-serif;
+            display: block;
+            margin-inline-end: 15px;
+        }
+
+        /* first section star end*/
+
+         /*second section start*/
+
+         main>section:nth-child(2) {
+            position: relative;
+            inset-inline-start: 21vw;
+            border-top: 5px solid black;
+            width: 77%;
+            left: 23%;
+        }
+
+        main>section:nth-child(2)>section:first-child>div>img {
+            width: 100%;
+            border-bottom: 2px solid green;
+            border-top: 2px solid rgb(154, 0, 0);
+            
+        }
+
+        main>section:nth-child(2)>section:first-child>div:first-child>img{
+            border-left: 2px solid rgb(154, 0, 0);    
+        }
+
+        main>section:nth-child(2)>section:first-child>div:nth-child(2)>img{
+            border-left: 2px solid green;   
+        }
+
+        main>section:nth-child(2)>section:first-child>div:nth-child(3)>img{
+            border-right: 2px solid rgb(154, 0, 0);  
+            border-left: 2px solid green;  
+        }
+
+        main>section:nth-child(2)>section:nth-child(2) {
+            padding-bottom: 10px;
+            padding-left: 10px;
+        }
+
+        main>section:nth-child(2)>section:nth-child(2)>p {
+            width: 100%;
+            font-family: 'Roboto', Arial, sans-serif;
+        }
+
+        main>section:nth-child(2)>section:first-child {
+            font-size: 0;
+            padding-top: 6px;
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
+        main>section:nth-child(2)>section:first-child>div {
+            box-sizing: border-box;
+            display: inline-block;
+            max-width: 33%;
+        }
+
+        
+        /*second section end*/
+
+        footer {
+            background-color: grey;
+            inline-size: 100%;
+            block-size: 50px;
+            position: relative;
+            text-align: center;
+        }
+
+        footer>p {
+            color: white;
+            position: absolute;
+            inline-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="frist">
+            <img src="assets/images/ijse.png" alt="">
+            <div class="second">
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Contacts</li>
+                    <li>About Us</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Services</li>
+                    <li>Contacts</li>
+                    <li>About Us</li>
+
+                </ul>
+            </nav>
+        </section>
+        <section>
+            <section>
+                <div>
+                    <img src="assets/images/swing.gif" alt="swinging.gif">
+                </div>
+                <div>
+                    <img src="assets/images/swing.gif" alt="swinging.gif">
+                </div>
+                <div>
+                    <img src="assets/images/swing.gif" alt="swinging.gif">
+                </div>
+            </section>
+            <section>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti suscipit cum eum corrupti
+                    incidunt
+                    eius consequatur laborum dignissimos fugit dolorem perferendis corporis at laudantium, quis
+                    voluptate
+                    mollitia adipisci. Minus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti suscipit cum eum corrupti
+                    incidunt
+                    eius consequatur laborum dignissimos fugit dolorem perferendis corporis at laudantium, quis
+                    voluptate
+                    mollitia adipisci. Minus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti suscipit cum eum corrupti
+                    incidunt
+                    eius consequatur laborum dignissimos fugit dolorem perferendis corporis at laudantium, quis
+                    voluptate
+                    mollitia adipisci. Minus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti suscipit cum eum corrupti
+                    incidunt
+                    eius consequatur laborum dignissimos fugit dolorem perferendis corporis at laudantium, quis
+                    voluptate
+                    mollitia adipisci. Minus.</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit deleniti suscipit cum eum corrupti
+                    incidunt
+                    eius consequatur laborum dignissimos fugit dolorem perferendis corporis at laudantium, quis
+                    voluptate
+                    mollitia adipisci. Minus.</p>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>Developed By DULAKSHA RANDIKA</p>
+    </footer>
+
+</body>
+
+</html>
