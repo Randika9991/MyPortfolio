@@ -1,0 +1,461 @@
+<!doctype html> <!--full standed mode html use karapu nisa-->
+<html lang="en">
+
+<head> <!--open tag eka-->
+   <!--tag dekak mada thiyenne element ekak-->
+   <meta charset="UTF-8"> <!--me kotasa(charset="UTF-8") = attribute kiyala kiyanne-->
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,user-scalable=no">
+   <title>my portfolio</title>
+   <meta charset="UTF-8"> <!---->
+   <LINK rel="icon" href="icons8-ui-60 (1).png">
+   <meta name="keyword" content="IJSE,GDSE,HTML,ABDS"> <!--type karana ekata adala site eka denne meken-->
+   <meta name="description" content="this is my first website"> <!--type karana ekata adala site eka denne meken-->
+   <meta name="owner" content="dulaksha randika">
+   <meta name="auther" content="dulaksha randika">
+   <meta name="theme-color" content="red"> <!--add color-->
+   <link rel="stylesheet" href="../../assets/css/8.0.1_normalize.css">
+   <link rel="stylesheet" href="../../assets/font-awsome/css/all.min.css">
+   <style>
+      * {
+         scroll-behavior: smooth;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         list-style: none;
+         text-decoration: none;
+      }
+/*heder style */
+      body {
+         font-family: 'Poppins', sans-serif;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+      }
+
+      header {
+         background-color: #191E23;
+         position: fixed;
+         width: 100%;
+         padding: 5px;
+         box-shadow: 1px 2px  1px #6b5a5a;         /*shadow eka dana eka  */
+      }
+
+      body>header>div {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      body>header>div>ul {
+         display: flex;
+      }
+
+      body>header>div>ul>li {
+         padding: 10px 20px;               /*spase eka danne meken*/
+         font-size: 18px;
+         transition: all .2s ease-in-out;
+      }
+
+      body>header>div>ul>li:hover {
+         background-color:  #FF014F;
+         border-radius: 20px;                /*radias eka add karanne meken*/
+         cursor: pointer;
+      }
+      body>header>div>ul>li>a{
+          color:  white;
+      }
+      body>header>div>h1{
+         box-shadow: 1px 2px 9px 1px #6b5a5a;
+      }
+/*heder style close*/
+      main {
+         position: relative;
+         top: 65px;
+         z-index: -1;
+      }
+
+      main > section {
+         background : #191E23;
+         background-attachment: fixed;
+         box-shadow: 0px 0px 0px 0px ;
+         filter: saturate(1.4);
+      }
+
+      main>section:nth-child(1)>div:nth-child(1){
+         position: relative;
+         background-size: cover;
+         background-position: center;
+      }
+
+      main>section:nth-child(1)>div:nth-child(1){
+         position: relative;
+         background-color: #FF014F ;
+         top: 60px;
+         height: 0px;
+         width: 0vw;
+         height: 30px;
+         width: 120px;
+
+         border-radius: 0px 15px 15px 0px;
+      }
+
+      main>section:nth-child(1)>div:nth-child(1)>h1{
+         position: relative;
+         height: 30px;
+         color: white;
+         left: 20px;
+      }
+
+      main>section:nth-child(1)>div:nth-child(2)>img{
+         position: relative;
+         top: 110px;
+         left: 100px;
+         right: 5px;
+         border-radius: 300px;
+         box-shadow: 0px 3px 2px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(1)>aside>div{
+         position: relative;
+         display: inline;                 /*spase eka danne meken*/
+         top: 160px;
+         left: 30px;
+         padding: 0px 35px;
+      }
+
+      main>section:nth-child(1)>aside>div>img {
+         border-radius: 20px;
+         box-shadow: 0px 3px 2px 0px rgb(255, 1, 79);
+      }
+
+
+      /* article create */
+
+   </style>
+</head> <!--close tag eka-->
+
+<body>
+   <header>
+      <div>
+         <h1><a href="#home"><img src="assets/images/icons8-github-400.png" width="78"></a></h1>
+         <ul>
+            <li><a href="#aboutme"><i class="fa-solid fa-sitemap"></i>About me</a></li>
+            <li><a href="#education"><i class="fa-solid fa-cart-shopping"></i>Education</a></li>
+            <li><a href="#project"><i class="fa-solid fa-file-invoice"></i>Project</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-cart-shopping"></i>Gallery</a></li>
+            <li><a href="#Expertise"><i class="fa-solid fa-cart-shopping"></i>Expertise</a></li>
+            <li><a href="#Contact"><i class="fa-solid fa-file-invoice"></i>Contact</a></li>
+         </ul>
+      </div>
+</header>
+   <main>
+      <section  id="home">
+         <div><h1>Home</h1></div>
+         <div>
+            <img src="assets//images/IMG_20230622_151316.JPG" alt="an image" width="450" usemap="#myMap">
+         </div>
+         <aside>
+            <div>
+               <img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="80" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-stack-overflow-300 (1).png" alt="an image" width="80" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-linkedin-512.png" alt="an image" width="80" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-github-400.png" alt="an image" width="80" usemap="#myMap">
+            </div>
+         </aside>
+         <section>
+            <hgroup>
+               <h1>welcome</h1>
+               <h3>
+                  <p>hellow, i'm <b><samp>Dulaksha Randika</samp></b>
+               </h3>
+               <article>
+                  <h4>a full stack developer from Sri Lanka</h4>
+                  <h6>best and user-friendly web applications,<br>i hava expertise in borth front-end and back-end
+                     development</h6>
+                  <h6>more...</h6>
+                  <button type="text">About me</button>
+               </article>
+            </hgroup>
+            <article></article>
+         </section>
+      </section>
+
+      <section>
+         <h1>about me</h1>
+         <article>
+            <p>My name is Dulaksha Randika.I am 23 years old. software engineering. <br>
+               I have been training with IJSE for the past one year.
+               Additionally, <br>I am knowledgeable in frameworks,
+               UI/UX design, and web development.<br>
+               services you need in these areas.</p>
+         </article>
+         <aside>
+            <img src="assets//images/IMG_20230213_141829.JPG" alt="an image" width="400" usemap="#myMap">
+         </aside>
+         <section>
+            <div>
+               <article>
+                  Name : I.D Dulaksha Randika Kumarasiri<br>
+                  Address : GALLE ROAD,AMBALANGODA<br>
+                  Age : 23 <br>
+                  Contact : 0770748419 <br>
+                  email : kumarasirirandika0706@gmail.com</article>
+            </div>
+         </section>
+      </section>
+
+      <section>
+         <h1>EDUCATION</h1>
+         <section>
+            <div>
+               <h4>G.C.E Ordinary Level (O/L)(2016-2017)</h4>
+               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
+               <div><a href="https://karandenicc.sc.edu.lk/">View Result</a></div>
+               <nav></nav>
+            </div>
+            <div>
+               <h4>Graduate Diploma in Software
+                  Engineering (GDSE)(2022-2024)</h4>
+               <div><a href="https://www.ijse.lk/">View School</a></div>
+               <div><a href="https://www.ijse.lk/">View School</a></div>
+               <nav></nav>
+            </div>
+            <div>
+               <h4>G.C.E Advanced Level(2017-2020)</h4>
+               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
+               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
+               <nav></nav>
+            </div>
+            <div>
+               <h4>Software engineering degree</h4>
+               <div></div>
+               <nav></nav>
+            </div>
+         </section>
+      </section>
+
+      <section>
+         <h1>my project</h1>
+         <section>
+            <div>
+               <img src="assets//images/3516355_2148.jpg" alt="an image" width="150" height="150" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/Screenshot 2023-06-21 190530.png" alt="an image" width="250" usemap="#myMap">
+               <figure>
+                  <figcaption>
+                        This is the project i did for a spice shop in our town.i was able to complete
+                        this project in two weeks. Bill record management,email management,
+                        data management are included in this project 
+                  </figcaption>
+               </figure>
+            </div>
+            <div>
+               <img src="assets//images/5481016_2852872.jpg" alt="an image" width="150" height="150" usemap="#myMap">
+            </div>
+         </section>
+         <section>
+            <h1>Languages I have Mastered</h1>
+            <div>
+               <img src="assets//images/icons8-figma-96.png" alt="an image" width="50" height="50" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-css-96.png" alt="an image" width="50" height="50" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-java-240.png" alt="an image" width="50" height="50" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-javascript-96.png" alt="an image" width="50" height="50" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-mysql-96 (1).png" alt="an image" width="50" height="50" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/icons8-html-96 (1).png" alt="an image" width="50" height="50" usemap="#myMap">
+            </div>
+         </section>
+      </section>
+
+      <section>
+         <h1>my assingment</h1>
+         <section>
+            <div>
+               <img src="assets//images/1.jpg" alt="an image" width="150" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/2.jpg" alt="an image" width="150" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/3.jpg" alt="an image" width="150" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/4.jpg" alt="an image" width="150" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/5.jpg" alt="an image" width="150" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/6.jpg" alt="an image" width="150" usemap="#myMap">
+            </div>
+         </section>
+      </section>
+
+      <section>
+         <h1>expertise</h1>
+         <section>
+            <div>
+               <div>
+                  <img src="assets//images/ex1.png" alt="an image" width="150" usemap="#myMap">
+               </div>
+               <h4>Application</h4>
+               <article>
+                  <p>using creative ideas, <br>
+                     create applications that <br>
+                     are dependable and <br>
+                     consistent.</p>
+               </article>
+            </div>
+            <div>
+               <div>
+                  <img src="assets//images/ex2.png" alt="an image" width="150" usemap="#myMap">
+               </div>
+               <h4>UI/UX design </h4>
+               <article>
+                  <p>
+                     using creative ideas, <br>
+                     create UI/UX that are <br>
+                     dependable and <br>
+                     consistent.
+                  </p>
+               </article>
+            </div>
+            <div>
+               <div>
+                  <img src="assets//images/ex3.png" alt="an image" width="150" usemap="#myMap">
+               </div>
+               <h4>web application</h4>
+               <article>
+                  <p>
+                     Using brilliant concepts, <br>
+                     create web application <br>
+                     that are dependable and <br>
+                     consistent.
+                  </p>
+               </article>
+            </div>
+         </section>
+      </section>
+
+      <section>
+         <h1>photo</h1>
+         <section>
+            <div>
+               <img src="assets//images/p1.jpg" alt="an image" width="200" height="200" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/p2.jpg" alt="an image" width="200" height="200" usemap="#myMap">
+            </div>
+            <div>
+               <img src="assets//images/p3.png" alt="an image" width="200" height="200" usemap="#myMap">
+            </div>
+         </section>
+      </section>
+
+      <section>
+         <h1>contact</h1>
+         <h3>Contact with me</h3>
+         <img src="assets//images/conta.jpg" alt="an image" width="200" height="200" usemap="#myMap">
+         <address></address>
+         <aside>
+            <form action="">
+               <fieldset>
+                  <legend>Contact with me</legend>
+                  <label for="Your name">your name:</label>
+                  <br>
+                  <input type="text" placeholder="UserName" required>
+                  <br>
+                  <label for="Phone Number">Phone Number:</label>
+                  <br>
+                  <input type="tel" placeholder="Phone Number" required>
+                  <br>
+                  <label for="email">email:</label>
+                  <br>
+                  <input type="email" placeholder="email" required>
+                  <br>
+                  <label for="subject">subject:</label>
+                  <br>
+                  <textarea name="" id="" cols="30" rows="10"></textarea>
+                  <br>
+                  <label for="password">password</label>
+                  <br>
+                  <input type="password" placeholder="--password--" required>
+                  <br>
+                  <button type="submit">send message</button>
+               </fieldset>
+            </form>
+         </aside>
+      </section>
+   </main>
+   <footer>
+      <nav>
+         <div>
+            <div>
+               <ul>
+                  <li>
+                     <a href="">About me</a>
+                  </li>
+                  <li>
+                     <a href="">EDUCATION</a>
+                  </li>
+                  <li>
+                     <a href="">Project</a>
+                  </li>
+                  <li>
+                     <a href="">Gallery</a>
+                  </li>
+               </ul>
+            </div>
+            <div>
+               <ul>
+                  <li>
+                     <a href="">Expertise</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div>
+         <div>
+            <img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="60" usemap="#myMap">
+         </div>
+         <div>
+            <img src="assets//images/icons8-stack-overflow-300 (1).png" alt="an image" width="60" usemap="#myMap">
+         </div>
+         <div>
+            <img src="assets//images/icons8-linkedin-512.png" alt="an image" width="60" usemap="#myMap">
+         </div>
+         <div>
+            <img src="assets//images/icons8-github-400.png" alt="an image" width="60" usemap="#myMap">
+         </div>
+      </div>
+
+      <cite>
+         Designed and developed by Dulaksha Randika.
+      </cite>
+      <small>
+         <br>
+         Copyright © 2023 - Dulaksha Randika All Rights Reserved.
+      </small>
+   </footer>
+</body>
+
+</html>
