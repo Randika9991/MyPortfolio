@@ -1,4 +1,3 @@
--
 <!doctype html> <!--full standed mode html use karapu nisa-->
 <html lang="en">
 
@@ -15,40 +14,160 @@
    <meta name="owner" content="dulaksha randika">
    <meta name="auther" content="dulaksha randika">
    <meta name="theme-color" content="red"> <!--add color-->
+   <link rel="stylesheet" href="../../assets/css/8.0.1_normalize.css">
+   <link rel="stylesheet" href="../../assets/font-awsome/css/all.min.css">
+   <style>
+      * {
+         scroll-behavior: smooth;
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         list-style: none;
+         text-decoration: none;
+      }
+/*heder style */
+      body {
+         font-family: 'Poppins', sans-serif;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+      }
+
+      header {
+         background-color: #191E23;
+         position: fixed;
+         width: 100%;
+         padding: 5px;
+         box-shadow: 1px 2px  1px #6b5a5a;         /*shadow eka dana eka  */
+      }
+
+      body>header>div {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+      }
+
+      body>header>div>ul {
+         display: flex;
+      }
+
+      body>header>div>ul>li {
+         padding: 10px 20px;               /*spase eka danne meken*/
+         font-size: 18px;
+         transition: all .2s ease-in-out;
+      }
+
+      body>header>div>ul>li:hover {
+         background-color:  #FF014F;
+         border-radius: 20px;                /*radias eka add karanne meken*/
+         cursor: pointer;
+      }
+      body>header>div>ul>li>a{
+          color:  white;
+      }
+      body>header>div>h1{
+         box-shadow: 1px 2px 9px 1px #6b5a5a;
+      }
+/*heder style close*/
+      main {
+         position: relative;
+         top: 65px;
+         z-index: -1;
+      }
+
+      main > section {
+         background : #191E23;
+         background-attachment: fixed;
+         box-shadow: 0px 0px 0px 0px ;
+         filter: saturate(1.4);
+      }
+
+      main>section:nth-child(1)>div:nth-child(1){
+         position: relative;
+         background-size: cover;
+         background-position: center;
+      }
+
+      main>section:nth-child(1)>div:nth-child(1){
+         position: relative;
+         background-color: #FF014F ;
+         top: 60px;
+         height: 0px;
+         width: 0vw;
+         height: 30px;
+         width: 120px;
+
+         border-radius: 0px 15px 15px 0px;
+      }
+
+      main>section:nth-child(1)>div:nth-child(1)>h1{
+         position: relative;
+         height: 30px;
+         color: white;
+         left: 20px;
+      }
+
+      main>section:nth-child(1)>div:nth-child(2)>img{
+         position: relative;
+         top: 110px;
+         left: 100px;
+         right: 5px;
+         border-radius: 300px;
+         box-shadow: 0px 3px 2px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(1)>aside>div{
+         position: relative;
+         display: inline;                 /*spase eka danne meken*/
+         top: 160px;
+         left: 30px;
+         padding: 0px 35px;
+      }
+
+      main>section:nth-child(1)>aside>div>img {
+         border-radius: 20px;
+         box-shadow: 0px 3px 2px 0px rgb(255, 1, 79);
+      }
+
+
+      /* article create */
+
+   </style>
 </head> <!--close tag eka-->
 
 <body>
    <header>
-      <div></div>
-      <nav>
-         <menu>
-            <li>HOME</li>
-            <li>ABOUT ME</li>
-            <li>EDUCATION</li>
-            <li>PROJECTS</li>
-            <li>GALLERY</li>
-            <li>EXPERTISE</li>
-            <li>CONTACT</li>
-         </menu>
-      </nav>
-   </header>
+      <div>
+         <h1><a href="#home"><img src="assets/images/icons8-github-400.png" width="78"></a></h1>
+         <ul>
+            <li><a href="#aboutme"><i class="fa-solid fa-sitemap"></i>About me</a></li>
+            <li><a href="#education"><i class="fa-solid fa-cart-shopping"></i>Education</a></li>
+            <li><a href="#project"><i class="fa-solid fa-file-invoice"></i>Project</a></li>
+            <li><a href="#gallery"><i class="fa-solid fa-cart-shopping"></i>Gallery</a></li>
+            <li><a href="#Expertise"><i class="fa-solid fa-cart-shopping"></i>Expertise</a></li>
+            <li><a href="#Contact"><i class="fa-solid fa-file-invoice"></i>Contact</a></li>
+         </ul>
+      </div>
+</header>
    <main>
-      <section>
+      <section  id="home">
+         <div><h1>Home</h1></div>
+         <div>
+            <img src="assets//images/IMG_20230622_151316.JPG" alt="an image" width="450" usemap="#myMap">
+         </div>
          <aside>
             <div>
-               <img src="assets//images/IMG_20230622_151316.JPG" alt="an image" width="400" usemap="#myMap">
+               <img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="80" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="60" usemap="#myMap">
+               <img src="assets//images/icons8-stack-overflow-300 (1).png" alt="an image" width="80" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-stack-overflow-300 (1).png" alt="an image" width="60" usemap="#myMap">
+               <img src="assets//images/icons8-linkedin-512.png" alt="an image" width="80" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-linkedin-512.png" alt="an image" width="60" usemap="#myMap">
-            </div>
-            <div>
-               <img src="assets//images/icons8-github-400.png" alt="an image" width="60" usemap="#myMap">
+               <img src="assets//images/icons8-github-400.png" alt="an image" width="80" usemap="#myMap">
             </div>
          </aside>
          <section>
