@@ -14,8 +14,8 @@
    <meta name="owner" content="dulaksha randika">
    <meta name="auther" content="dulaksha randika">
    <meta name="theme-color" content="red"> <!--add color-->
-   <link rel="stylesheet" href="../../assets/css/8.0.1_normalize.css">
-   <link rel="stylesheet" href="../../assets/font-awsome/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/8.0.1_normalize.css">
+   <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
    <style>
       /*--all styl--*/
       * {
@@ -24,8 +24,9 @@
          padding: 0;
          list-style: none;
          text-decoration: none;
-         color:white;
+         color: white;
       }
+
       /*header style*/
       header {
          background-color: #191E23;
@@ -35,6 +36,7 @@
          box-shadow: 1px 2px 1px #6b5a5a;
          z-index: 3;
       }
+
       header>div {
          display: flex;
          justify-content: space-between;
@@ -71,17 +73,20 @@
       body>header>div>h1 {
          box-shadow: 1px 2px 9px 1px #6b5a5a;
       }
+
       /*-main style*/
       main {
          position: relative;
          top: 100px;
          z-index: 1;
-         height: 100vh;        /*viewport hight */
+         height: 100vh;
+         /*viewport hight */
          width: 100%;
       }
+
       /*----------------------------------------------section:first create---------------------------------------------*/
       /*all.... main > section > div:first-child */
-      main > section > div:first-child {
+      main>section>div:first-child {
          box-shadow: 0px 0px 3px 0px #6b5a5a;
          height: 40px;
          width: 180px;
@@ -92,18 +97,23 @@
          background-color: #FF014F;
          z-index: 2;
       }
-                                           /*ok*/
-      main > section > div > h1 {
+
+      /*ok*/
+      main>section>div>h1 {
          color: #ebe3e3;
          padding: 5px;
          text-aling: center;
+
       }
-      main > section {
+
+      main>section {
          background-color: #191E23;
          filter: saturate(1.4);
+         box-shadow: 1px 9px 5px 0px #ffffff;
       }
+
       /*main first section*/
-      main > section:first-child {
+      main>section:first-child {
          filter: saturate(1.4);
          position: relative;
          height: 80vh;
@@ -118,6 +128,7 @@
          width: 24.36%;
          box-shadow: 0px 3px 2px 0px rgb(255, 1, 79);
       }
+
       main>section:first-child>div:nth-child(3) {
          position: absolute;
          left: 7%;
@@ -128,10 +139,11 @@
          z-index: -1;
       }
 
-      main>section:first-child>div:nth-child(3)>div>img{
+      main>section:first-child>div:nth-child(3)>div>img {
          box-shadow: 0px 3px 6px 0px rgb(255, 1, 79);
          border-radius: 20px;
       }
+
       /*div 4 */
       main>section:first-child>div:nth-child(4) {
          position: absolute;
@@ -140,6 +152,7 @@
          width: 63%;
          height: 67%;
       }
+
       main>section:first-child>div:nth-child(4)>hgroup>h1 {
          font-size: 74px;
          position: absolute;
@@ -147,6 +160,7 @@
          font-family: emoji;
          bottom: 76%;
       }
+
       main>section:first-child>div:nth-child(4)>hgroup>h3 {
          position: absolute;
          font-size: 30px;
@@ -180,15 +194,16 @@
          position: absolute;
          box-shadow: 0px 3px 6px 0px rgb(64, 12, 28);
       }
+
       /*----------------------------------------------section:second create---------------------------------------------*/
       /*main second section*/
-      main > section:nth-child(2){
+      main>section:nth-child(2) {
          filter: saturate(1.4);
          position: relative;
          height: 80vh;
       }
 
-      main > section:nth-child(2)>article {
+      main>section:nth-child(2)>article {
          position: absolute;
          height: 80vh;
          font-size: 30px;
@@ -196,7 +211,8 @@
          position: absolute;
          left: 8%;
       }
-      main > section:nth-child(2)>aside>img {
+
+      main>section:nth-child(2)>aside>img {
          position: absolute;
          left: 156px;
          /* right: -137%; */
@@ -207,7 +223,7 @@
          box-shadow: 0px 1px 0px 15px rgb(0 0 0);
       }
 
-      main > section:nth-child(2)>div>article {
+      main>section:nth-child(2)>div>article {
          height: 109vh;
          font-size: 30px;
          padding-top: 35px;
@@ -216,37 +232,299 @@
          /* right: 540px; */
          top: 46%;
       }
+
       /*----------------------------------------------section:third create---------------------------------------------*/
       /*main third section*/
-      main > section:nth-child(3){
+      main>section:nth-child(3) {
          position: relative;
          height: 80vh;
       }
 
-      main > section:nth-child(3)>section {
+      main>section:nth-child(3)>section {
          filter: saturate(1.4);
          position: absolute;
-
-         width: 80%;
-         left: 3px;
-         /* right: 12px; */
-         top: 20px;
-         bottom: 137%;
+         /* background-color: purple; */
+         left: 20vw;
+         top: 64px;
+         bottom: 54px;
+         /* bottom: 137%; */
+         right: 20vw;
          margin: auto;
          display: grid;
          grid-template-rows: repeat(2, 1fr);
          grid-template-columns: repeat(2, 1fr);
-         gap: 20px;
+         gap: 58px;
+         border-radius: 20px;
       }
-      main > section:nth-child(3)> section>div{
-         width: 80%;
+
+      main>section:nth-child(3)>section>div {
+         font-size: 30px;
+         top: 40%;
+         width: 98%;
+         height: 96%;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(3)>section>div>h6 {
+         top: 20px;
+         left: 5px;
+         right: 5px;
+         position: relative;
+      }
+
+      main>section:nth-child(3)>section>div>h6>a {
+         right: 5px;
+         top: 5px;
+         left: 5px;
+         position: relative;
+      }
+
+      main>section:nth-child(3)>section>div {
+         font-size: 30px;
+         top: 40%;
+         width: 98%;
+         height: 96%;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+
+      }
+
+      main>section:nth-child(3)>section>div>div {
+         display: flex;
+         position: relative;
+         top: 40px;
+         left: 10px;
+      }
+
+      main>section:nth-child(3)>section>div>div>img {
+         border-radius: 20px;
+      }
+
+      /*----------------------------------------------section:four create---------------------------------------------*/
+      main>section:nth-child(4) {
+         position: relative;
+         height: 110vh;
+      }
+
+      main>section:nth-child(4)>section {
+
+         filter: saturate(1.4);
+         position: relative;
+         top: 31px;
+         bottom: 75%;
+         margin: auto;
+         display: grid;
+         grid-template-rows: repeat(1, 1fr);
+         grid-template-columns: repeat(3, 1fr);
+         gap: 5vw;
+         width: 84vw;
+         height: 66vh;
+      }
+
+      main>section:nth-child(4)>section>div {
+         margin: auto;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+         text-align: center;
+         font-size: 28px;
+      }
+
+      main>section:nth-child(4)>section>div>img {
+         width: 25vw;
+         height: 25vh;
+         border-radius: 20px;
+         /*box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);*/
+      }
+
+      main>section:nth-child(4)>div:nth-child(3)>h3 {
+
+         position: relative;
+         font-size: 28px;
+         text-align: center;
+         /* margin: auto; */
+         top: 10%;
+         margin: auto;
+         text-align: center;
+      }
+
+      main>section:nth-child(4)>div:nth-child(4) {
+         position: absolute;
+         left: 12vw;
+         right: 12vw;
+         top: 86%;
+         display: grid;
+         grid-template-rows: repeat(1, 1fr);
+         grid-template-columns: repeat(6, 1fr);
+         gap: 5px;
+      }
+
+      main>section:nth-child(4)>h3 {
+         position: absolute;
+         top: 79%;
+         left: 22vw;
+         right: 22vw;
+         /* background: purple; */
+         text-align: center;
+         margin: auto;
+         font-size: 23px;
+      }
+
+      main>section:nth-child(4)>div:nth-child(4)>div {
+         margin: auto;
          box-shadow: 0px 3px 6px 0px rgb(255, 1, 79);
+         border-radius: 16px;
+      }
+
+      /*----------------------------------------------section:five create---------------------------------------------*/
+
+      main>section:nth-child(5) {
+         position: relative;
+         height: 110vh;
+         filter: saturate(1.4);
+      }
+
+      main>section:nth-child(5)>section {
+         position: relative;
+         top: 31px;
+         bottom: 75%;
+         margin: auto;
+         display: grid;
+         grid-template-rows: repeat(2, 1fr);
+         grid-template-columns: repeat(3, 1fr);
+         gap: 5vw;
+         width: 77vw;
+      }
+
+      main>section:nth-child(5)>section>div {
+         margin: auto;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+         text-align: center;
+         font-size: 0px;
+         width: 20vw;
+         height: 40vh;
+         background: #2F2F2F;
+      }
+
+      main>section:nth-child(5)>section>div>img {
+         position: relative;
+         top: 24px;
+         width: 17vw;
+         height: 33vh;
+         border-radius: 20px;
+         bottom: 31vh;
+      }
+
+      /*----------------------------------------------section:six create---------------------------------------------*/
+      main>section:nth-child(6) {
+         position: relative;
+         height: 90vh;
+         filter: saturate(1.4);
+      }
+
+      main>section:nth-child(6)>section {
+         position: relative;
+         top: 53px;
+         margin: auto;
+         display: grid;
+         grid-template-rows: repeat(1, 1fr);
+         grid-template-columns: repeat(3, 1fr);
+         gap: -1vw;
+      }
+
+      main>section:nth-child(6)>section>div {
+         font-size: 18px;
+         margin-left: 34px;
+         left: 34px;
+         margin: auto;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+         text-align: center;
+         width: 19vw;
+         display: flex;
+         height: 57vh;
+         color: white;
+         background: black;
+      }
+
+      main>section:nth-child(6)>section>div >div {
+         text-align: center;
+         margin-bottom: auto;
+         margin-top: auto;
+         margin-left: auto;
+         margin-right: auto;
+
+      }
+
+      main>section:nth-child(6)>section>div >div>img{
+         top: 18px;
+         width: 13vw;
+      }
+
+      main>section:nth-child(6)>section>div >div>h4{
+         position: relative;
+         top: 1vh;
+         font-size: 26px;
+      }
+      main>section:nth-child(6)>section>div >div>article{
+         position: relative;
+         top: 3vh;
+         font-size: 20px;
+      }
+
+      /*----------------------------------------------section:seven create---------------------------------------------*/
+      main>section:nth-child(7) {
+         position: relative;
+         height: 80vh;
+      }
+
+      main>section:nth-child(7)>section {
+
+         position: relative;
+         top: 31px;
+         bottom: 75%;
+         margin: auto;
+         display: grid;
+         grid-template-rows: repeat(1, 1fr);
+         grid-template-columns: repeat(3, 1fr);
+         gap: 0vw;
+         width: 84vw;
+         height: 66vh;
+      }
+
+      main>section:nth-child(7)>section>div {
+         margin: auto;
+         border-radius: 20px;
+         /*box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);*/
+      }
+
+      main>section:nth-child(7)>section>div>img {
+         width: 25vw;
+         height: 49vh;
+         border-radius: 20px;
+          box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(7)>section>div:first-child>img{
+         width: 15vw;
+         height: 40vh;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(7)>section>div:last-child>img{
+         width: 15vw;
+         height: 40vh;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
       }
 
 
 
    </style>
 </head> <!--close tag eka-->
+
 <body>
    <header>
       <div>
@@ -263,7 +541,7 @@
    </header>
 
    <main>
-<!-- friest section start-->
+      <!-- first section start-->
       <section id="home">
          <div>
             <h1>Home</h1>
@@ -302,25 +580,27 @@
             <article></article>
          </div>
       </section>
-<!--friest section done-->
-<!--second section start-->
-
+      <!--first section done-->
+      <!--second section start-->
       <section>
          <div>
-            <h1>about me</h1>
+            <h1>About me</h1>
          </div>
          <article>
-            <p><h6>My name is Dulaksha Randika.I am 23 years old. software engineering. <br>
+            <p>
+            <h6>My name is Dulaksha Randika.I am 23 years old. software engineering. <br>
                I have been training with IJSE for the past one year.
                Additionally, <br>I am knowledgeable in frameworks,
                UI/UX design, and web development.<br>
-               services you need in these areas.</h6></p>
+               services you need in these areas.</h6>
+            </p>
          </article>
          <aside>
             <img src="assets//images/IMG_20230213_141829.JPG" alt="an image" width="400" usemap="#myMap">
          </aside>
          <div>
-            <article><h6>
+            <article>
+               <h6>
                   Name : I.D Dulaksha Randika Kumarasiri<br>
                   Address : GALLE ROAD,AMBALANGODA<br>
                   Age : 23 <br>
@@ -333,60 +613,90 @@
       <!--third section open-->
       <section>
          <div>
-            <h1>EDUCATION</h1>
+            <h1>Education</h1>
          </div>
          <section>
             <div>
-               <h4>G.C.E Ordinary Level (O/L)(2016-2017)</h4>
-               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
-               <div><a href="https://karandenicc.sc.edu.lk/">View Result</a></div>
+               <h6>G.C.E Ordinary Level (O/L)(2016-2017)</h6>
+               <div>
+                  <img
+                     src="https://media.licdn.com/dms/image/C560BAQF_cIBxAI-psQ/company-logo_200_200/0/1584184567159?e=1703116800&v=beta&t=4vML5KpDx-r6goAuuMqxshwEb81wH0doYUKrfOHjKsI"
+                     alt="an image" width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View School</a></h6>
+               </div>
+               <div>
+                  <img
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMUlEQVR4nNVaa4hbVRC+P3z8V6jazTmpa23FH4L43x+Cv4qlUmyxYB8zMbs+thYs1IL4qmJ/dJuKaMUHYkGwWFFRu64VilDU3dqHIrLsVhDdek6ym93mtUm6yR2Z0zUkzWZ77829N5uBgQvn5OT7zsyZOzPnWpYPkoxuu1VHcYsW8IaSOKwkTGgJM0rAZVbzLGGCx3iOjsQe5d9YnZTJlY/drCTu1BJPa4nkTWFUSRjgtUID/k9PLKIkHtISCt6BN2leSUxMR7b2BAac7otfrwU8oyTkfAROV1mkoAS+NL564EZfwU+ugrVK4PnggGODKgHnUitja3wBn5SwMdhdxxYkMKujOx5uC7wSsF1JmA8bvP6fhMSKFtDvCbwW2Ncp4LqJCAx4cBusdBq4rrdEBDY4Ax/B1UpgptOgdbMVchej8buWBP/73Y/cEGa00W5JCDzL4bwlASXwOScLtSu8RuqenZ5IJCXsXhQ8vwX5jRgWgfLIOCXv6PPkSikZv61590164GwRPwiwzB095fE84GADeE6m3OQ2fhFgyb32qRcS+YYEcCGrdLxAu9KwRtWm2cff8mCF2FM1Am5TYl8JEJFdLFN6/asuScCIAc8HQkm0wybQrirGfDveYplKyuWPgxLtloTAzZYp8bqVgMQEH+BhrwSqlwqUPzxE+bePG50fv0il73+l/DtDZGfnaO7IydpYvZZO/uYLAS3wOBP40zOB2TzlDnxOudePGTUEvj1LucEvDIHCu8O1sXotnTjvkwVgwtIS0t3qQlrCFOf95a4lIKDUFoHKXynSvfEl5xa/Pk2Z3R+a5+SaJ6h86g+afvAFHwnILnchJeFCtxJQfIjbCaMsHCrnPv6hKaSasDo2GSgBzWG03RdZ4b3vqPDBCUOgPqSasHoNAsVvfjGh2LsFMGFxozV0F7Jtyu0/RtMPPE/VmZx3AmLHJosTolCTuUqVMns+ovRD+6g6nW0Y8pTMXUmnYdQrgan79zaMFb8cMQCLn/1I1akMZV/+xIA2G18s0yy+SbPbDpFdKDVxc7f78FNdQQMDgVhgvkozWxOU2XvEnJH0xv10adf7RPOVRadrFxj+jcCTV5WUzgp6ty5k50uUXvcKpe7dRdl9R43/txLttaRcKCsTQZ0B9vXiV6PXnKedu8+BjrZV2iGgBGZbXk8pCXuWOwEdxWetVsJtO27fuTlMoarAM0u2Fpd7c3dyFay1nAjfjCy79rqA9Y7A10jIWHyZgLe1xJjVvVdM2OcJfM0SEdhgLtzCBi8w49ptWkmqZ/udoUYngWc4mFh+ClkvXmcuugO1BpiLbr4psoKSK71UOOgmd3L4qcFgqB+ALHzs8bSW+LPbemLhgNqcEnOb/O8I3hQa8MVE9fav4EYrJ4RKwpAWOGa6HdyyMW0b8zzGY2YOz+3tX+HHn/8HIHp5HZUuPzMAAAAASUVORK5CYII="
+                     width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View Result</a></h6>
+               </div>
                <nav></nav>
             </div>
             <div>
-               <h4>Graduate Diploma in Software
-                  Engineering (GDSE)(2022-2024)</h4>
-               <div><a href="https://www.ijse.lk/">View School</a></div>
-               <div><a href="https://www.ijse.lk/">View School</a></div>
+               <h6>Graduate Diploma in Software
+                  Engineering (GDSE)(2022-2024)</h6>
+               <div>
+                  <img src="https://www.ijse.lk/images/logos/ijse@1x.png" width="20" usemap="#myMap">
+                  <h6><a href="https://www.ijse.lk/">View Course</a></h6>
+               </div>
+               <div>
+                  <img
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMUlEQVR4nNVaa4hbVRC+P3z8V6jazTmpa23FH4L43x+Cv4qlUmyxYB8zMbs+thYs1IL4qmJ/dJuKaMUHYkGwWFFRu64VilDU3dqHIrLsVhDdek6ym93mtUm6yR2Z0zUkzWZ77829N5uBgQvn5OT7zsyZOzPnWpYPkoxuu1VHcYsW8IaSOKwkTGgJM0rAZVbzLGGCx3iOjsQe5d9YnZTJlY/drCTu1BJPa4nkTWFUSRjgtUID/k9PLKIkHtISCt6BN2leSUxMR7b2BAac7otfrwU8oyTkfAROV1mkoAS+NL564EZfwU+ugrVK4PnggGODKgHnUitja3wBn5SwMdhdxxYkMKujOx5uC7wSsF1JmA8bvP6fhMSKFtDvCbwW2Ncp4LqJCAx4cBusdBq4rrdEBDY4Ax/B1UpgptOgdbMVchej8buWBP/73Y/cEGa00W5JCDzL4bwlASXwOScLtSu8RuqenZ5IJCXsXhQ8vwX5jRgWgfLIOCXv6PPkSikZv61590164GwRPwiwzB095fE84GADeE6m3OQ2fhFgyb32qRcS+YYEcCGrdLxAu9KwRtWm2cff8mCF2FM1Am5TYl8JEJFdLFN6/asuScCIAc8HQkm0wybQrirGfDveYplKyuWPgxLtloTAzZYp8bqVgMQEH+BhrwSqlwqUPzxE+bePG50fv0il73+l/DtDZGfnaO7IydpYvZZO/uYLAS3wOBP40zOB2TzlDnxOudePGTUEvj1LucEvDIHCu8O1sXotnTjvkwVgwtIS0t3qQlrCFOf95a4lIKDUFoHKXynSvfEl5xa/Pk2Z3R+a5+SaJ6h86g+afvAFHwnILnchJeFCtxJQfIjbCaMsHCrnPv6hKaSasDo2GSgBzWG03RdZ4b3vqPDBCUOgPqSasHoNAsVvfjGh2LsFMGFxozV0F7Jtyu0/RtMPPE/VmZx3AmLHJosTolCTuUqVMns+ovRD+6g6nW0Y8pTMXUmnYdQrgan79zaMFb8cMQCLn/1I1akMZV/+xIA2G18s0yy+SbPbDpFdKDVxc7f78FNdQQMDgVhgvkozWxOU2XvEnJH0xv10adf7RPOVRadrFxj+jcCTV5WUzgp6ty5k50uUXvcKpe7dRdl9R43/txLttaRcKCsTQZ0B9vXiV6PXnKedu8+BjrZV2iGgBGZbXk8pCXuWOwEdxWetVsJtO27fuTlMoarAM0u2Fpd7c3dyFay1nAjfjCy79rqA9Y7A10jIWHyZgLe1xJjVvVdM2OcJfM0SEdhgLtzCBi8w49ptWkmqZ/udoUYngWc4mFh+ClkvXmcuugO1BpiLbr4psoKSK71UOOgmd3L4qcFgqB+ALHzs8bSW+LPbemLhgNqcEnOb/O8I3hQa8MVE9fav4EYrJ4RKwpAWOGa6HdyyMW0b8zzGY2YOz+3tX+HHn/8HIHp5HZUuPzMAAAAASUVORK5CYII="
+                     width="20" usemap="#myMap">
+                  <h6><a href="https://www.ijse.lk/">View Certificate</a></h6>
+               </div>
                <nav></nav>
             </div>
             <div>
-               <h4>G.C.E Advanced Level(2017-2020)</h4>
-               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
-               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
+               <h6>G.C.E Advanced Level(2017-2020)</h6>
+               <div>
+                  <img
+                     src="https://media.licdn.com/dms/image/C560BAQF_cIBxAI-psQ/company-logo_200_200/0/1584184567159?e=1703116800&v=beta&t=4vML5KpDx-r6goAuuMqxshwEb81wH0doYUKrfOHjKsI"
+                     alt="an image" width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View School</a></h6>
+               </div>
+               <div>
+                  <img
+                     src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMUlEQVR4nNVaa4hbVRC+P3z8V6jazTmpa23FH4L43x+Cv4qlUmyxYB8zMbs+thYs1IL4qmJ/dJuKaMUHYkGwWFFRu64VilDU3dqHIrLsVhDdek6ym93mtUm6yR2Z0zUkzWZ77829N5uBgQvn5OT7zsyZOzPnWpYPkoxuu1VHcYsW8IaSOKwkTGgJM0rAZVbzLGGCx3iOjsQe5d9YnZTJlY/drCTu1BJPa4nkTWFUSRjgtUID/k9PLKIkHtISCt6BN2leSUxMR7b2BAac7otfrwU8oyTkfAROV1mkoAS+NL564EZfwU+ugrVK4PnggGODKgHnUitja3wBn5SwMdhdxxYkMKujOx5uC7wSsF1JmA8bvP6fhMSKFtDvCbwW2Ncp4LqJCAx4cBusdBq4rrdEBDY4Ax/B1UpgptOgdbMVchej8buWBP/73Y/cEGa00W5JCDzL4bwlASXwOScLtSu8RuqenZ5IJCXsXhQ8vwX5jRgWgfLIOCXv6PPkSikZv61590164GwRPwiwzB095fE84GADeE6m3OQ2fhFgyb32qRcS+YYEcCGrdLxAu9KwRtWm2cff8mCF2FM1Am5TYl8JEJFdLFN6/asuScCIAc8HQkm0wybQrirGfDveYplKyuWPgxLtloTAzZYp8bqVgMQEH+BhrwSqlwqUPzxE+bePG50fv0il73+l/DtDZGfnaO7IydpYvZZO/uYLAS3wOBP40zOB2TzlDnxOudePGTUEvj1LucEvDIHCu8O1sXotnTjvkwVgwtIS0t3qQlrCFOf95a4lIKDUFoHKXynSvfEl5xa/Pk2Z3R+a5+SaJ6h86g+afvAFHwnILnchJeFCtxJQfIjbCaMsHCrnPv6hKaSasDo2GSgBzWG03RdZ4b3vqPDBCUOgPqSasHoNAsVvfjGh2LsFMGFxozV0F7Jtyu0/RtMPPE/VmZx3AmLHJosTolCTuUqVMns+ovRD+6g6nW0Y8pTMXUmnYdQrgan79zaMFb8cMQCLn/1I1akMZV/+xIA2G18s0yy+SbPbDpFdKDVxc7f78FNdQQMDgVhgvkozWxOU2XvEnJH0xv10adf7RPOVRadrFxj+jcCTV5WUzgp6ty5k50uUXvcKpe7dRdl9R43/txLttaRcKCsTQZ0B9vXiV6PXnKedu8+BjrZV2iGgBGZbXk8pCXuWOwEdxWetVsJtO27fuTlMoarAM0u2Fpd7c3dyFay1nAjfjCy79rqA9Y7A10jIWHyZgLe1xJjVvVdM2OcJfM0SEdhgLtzCBi8w49ptWkmqZ/udoUYngWc4mFh+ClkvXmcuugO1BpiLbr4psoKSK71UOOgmd3L4qcFgqB+ALHzs8bSW+LPbemLhgNqcEnOb/O8I3hQa8MVE9fav4EYrJ4RKwpAWOGa6HdyyMW0b8zzGY2YOz+3tX+HHn/8HIHp5HZUuPzMAAAAASUVORK5CYII="
+                     width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View Result</a></h6>
+               </div>
                <nav></nav>
             </div>
             <div>
-               <h4>Software engineering degree</h4>
-               <div></div>
-               <nav></nav>
+               <h6>Software engineering degree</h6>
             </div>
          </section>
       </section>
-
+      <!--third section done-->
+      <!--four section start-->
       <section>
          <div>
-            <h1>my project</h1>
+            <h1>My project</h1>
          </div>
          <section>
             <div>
-               <img src="assets//images/3516355_2148.jpg" alt="an image" width="150" height="150" usemap="#myMap">
+               <img src="assets//images/Screenshot 2023-09-16 215205.png" alt="an image" width="250" height="200"
+                  usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/Screenshot 2023-06-21 190530.png" alt="an image" width="250" usemap="#myMap">
+               <img src="assets//images/Screenshot 2023-06-21 190530.png" alt="an image" width="450" usemap="#myMap">
                <figure>
                   <figcaption>
-                     This is the project i did for a spice shop in our town.i was able to complete
-                     this project in two weeks. Bill record management,email management,
-                     data management are included in this project
+                     <h6> This is the project i did for a spice shop in our town.i was able to complete
+                        this project in two weeks. Bill record management,email management,
+                        data management are included in this project</h6>
                   </figcaption>
                </figure>
             </div>
             <div>
-               <img src="assets//images/5481016_2852872.jpg" alt="an image" width="150" height="150" usemap="#myMap">
+               <img src="assets//images/Screenshot 2023-09-16 215638.png" alt="an image" width="250" height="200"
+                  usemap="#myMap">
             </div>
          </section>
-         <section>
-            <h1>Languages I have Mastered</h1>
+         <h3>Languages I have Mastered</h3>
+         <div>
+
             <div>
                <img src="assets//images/icons8-figma-96.png" alt="an image" width="50" height="50" usemap="#myMap">
             </div>
@@ -405,12 +715,13 @@
             <div>
                <img src="assets//images/icons8-html-96 (1).png" alt="an image" width="50" height="50" usemap="#myMap">
             </div>
-         </section>
+         </div>
       </section>
-
+      <!--four section done-->
+      <!--five section start-->
       <section>
          <div>
-            <h1>my assingment</h1>
+            <h1>My assingment</h1>
          </div>
 
          <section>
@@ -434,59 +745,61 @@
             </div>
          </section>
       </section>
-
+      <!--five section done-->
+      <!--six section start-->
       <section>
          <div>
-            <h1>expertise</h1>
+            <h1>Expertise</h1>
          </div>
-
          <section>
             <div>
                <div>
                   <img src="assets//images/ex1.png" alt="an image" width="150" usemap="#myMap">
+                  <h4>Application</h4>
+                  <article>
+                     <p>using creative ideas, <br>
+                        create applications that <br>
+                        are dependable and <br>
+                        consistent.</p>
+                  </article>
                </div>
-               <h4>Application</h4>
-               <article>
-                  <p>using creative ideas, <br>
-                     create applications that <br>
-                     are dependable and <br>
-                     consistent.</p>
-               </article>
             </div>
             <div>
                <div>
                   <img src="assets//images/ex2.png" alt="an image" width="150" usemap="#myMap">
+                  <h4>UI/UX design </h4>
+                  <article>
+                     <p>
+                        using creative ideas, <br>
+                        create UI/UX that are <br>
+                        dependable and <br>
+                        consistent.
+                     </p>
+                  </article>
                </div>
-               <h4>UI/UX design </h4>
-               <article>
-                  <p>
-                     using creative ideas, <br>
-                     create UI/UX that are <br>
-                     dependable and <br>
-                     consistent.
-                  </p>
-               </article>
+
             </div>
             <div>
                <div>
                   <img src="assets//images/ex3.png" alt="an image" width="150" usemap="#myMap">
+                  <h4>web application</h4>
+                  <article>
+                     <p>
+                        Using brilliant concepts, <br>
+                        create web application <br>
+                        that are dependable and <br>
+                        consistent.
+                     </p>
+                  </article>
                </div>
-               <h4>web application</h4>
-               <article>
-                  <p>
-                     Using brilliant concepts, <br>
-                     create web application <br>
-                     that are dependable and <br>
-                     consistent.
-                  </p>
-               </article>
             </div>
          </section>
       </section>
-
+      <!--six section done-->
+      <!--seven section start-->
       <section>
          <div>
-            <h1>photo</h1>
+            <h1>Photo</h1>
          </div>
          <section>
             <div>
@@ -503,7 +816,7 @@
 
       <section>
          <div>
-            <h1>contact</h1>
+            <h1>Contact</h1>
          </div>
          <h3>Contact with me</h3>
          <img src="assets//images/conta.jpg" alt="an image" width="200" height="200" usemap="#myMap">

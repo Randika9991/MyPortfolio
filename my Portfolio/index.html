@@ -14,8 +14,8 @@
    <meta name="owner" content="dulaksha randika">
    <meta name="auther" content="dulaksha randika">
    <meta name="theme-color" content="red"> <!--add color-->
-   <link rel="stylesheet" href="../../assets/css/8.0.1_normalize.css">
-   <link rel="stylesheet" href="../../assets/font-awsome/css/all.min.css">
+   <link rel="stylesheet" href="assets/css/8.0.1_normalize.css">
+   <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
    <style>
       /*--all styl--*/
       * {
@@ -97,10 +97,12 @@
          color: #ebe3e3;
          padding: 5px;
          text-aling: center;
+
       }
       main > section {
          background-color: #191E23;
          filter: saturate(1.4);
+         box-shadow: 1px 9px 5px 0px #ffffff;
       }
       /*main first section*/
       main > section:first-child {
@@ -226,21 +228,93 @@
       main > section:nth-child(3)>section {
          filter: saturate(1.4);
          position: absolute;
-
-         width: 80%;
-         left: 3px;
-         /* right: 12px; */
-         top: 20px;
-         bottom: 137%;
+         /* background-color: purple; */
+         left: 20vw;
+         top: 64px;
+         bottom: 54px;
+         /* bottom: 137%; */
+         right: 20vw;
          margin: auto;
          display: grid;
          grid-template-rows: repeat(2, 1fr);
          grid-template-columns: repeat(2, 1fr);
-         gap: 20px;
+         gap: 58px;
+         border-radius: 20px;
       }
-      main > section:nth-child(3)> section>div{
-         width: 80%;
-         box-shadow: 0px 3px 6px 0px rgb(255, 1, 79);
+
+      main > section:nth-child(3)> section>div {
+         font-size: 30px;
+         top: 40%;
+         width: 98%;
+         height: 96%;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main > section:nth-child(3)> section>div>h6{
+         top: 20px;
+         left: 5px;
+         right: 5px;
+         position: relative;
+      }
+
+      main > section:nth-child(3)> section>div>h6>a{
+         right: 5px;
+         top: 5px;
+         left: 5px;
+         position: relative;
+      }
+      main > section:nth-child(3)> section>div {
+         font-size: 30px;
+         top: 40%;
+         width: 98%;
+         height: 96%;
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+
+      }
+      main > section:nth-child(3)> section>div>div {
+         display: flex;
+         position: relative;
+         top: 40px;
+         left: 10px;
+      }
+      main > section:nth-child(3)> section>div>div>img {
+         border-radius: 20px;
+      }
+
+      /*----------------------------------------------section:four create---------------------------------------------*/
+      main > section:nth-child(4){
+         position: relative;
+         height: 110vh;
+      }
+
+      main > section:nth-child(4)>section {
+         filter: saturate(1.4);
+         position: relative;
+         /*background-color: purple;*/
+         /* left: 0vw; */
+         top: 31px;
+         /* bottom: 38px; */
+         bottom: 75%;
+         /* right: 0vw; */
+         margin: auto;
+         display: grid;
+         grid-template-rows: repeat(1, 1fr);
+         grid-template-columns: repeat(3, 1fr);
+         gap: 57px;
+         /* border-radius: 20px; */
+         width: 84%;
+         height: 66%;
+      }
+
+      main > section:nth-child(4)> section>div {
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+      main > section:nth-child(4)> section>div>img{
+         border-radius: 20px;
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
       }
 
 
@@ -263,7 +337,7 @@
    </header>
 
    <main>
-<!-- friest section start-->
+<!-- first section start-->
       <section id="home">
          <div>
             <h1>Home</h1>
@@ -302,7 +376,7 @@
             <article></article>
          </div>
       </section>
-<!--friest section done-->
+<!--first section done-->
 <!--second section start-->
 
       <section>
@@ -337,39 +411,54 @@
          </div>
          <section>
             <div>
-               <h4>G.C.E Ordinary Level (O/L)(2016-2017)</h4>
-               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
-               <div><a href="https://karandenicc.sc.edu.lk/">View Result</a></div>
+               <h6>G.C.E Ordinary Level (O/L)(2016-2017)</h6>
+                     <div>
+                        <img src="https://media.licdn.com/dms/image/C560BAQF_cIBxAI-psQ/company-logo_200_200/0/1584184567159?e=1703116800&v=beta&t=4vML5KpDx-r6goAuuMqxshwEb81wH0doYUKrfOHjKsI" alt="an image" width="20" usemap="#myMap">
+                        <h6><a href="https://karandenicc.sc.edu.lk/">View School</a></h6>
+                     </div>
+               <div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMUlEQVR4nNVaa4hbVRC+P3z8V6jazTmpa23FH4L43x+Cv4qlUmyxYB8zMbs+thYs1IL4qmJ/dJuKaMUHYkGwWFFRu64VilDU3dqHIrLsVhDdek6ym93mtUm6yR2Z0zUkzWZ77829N5uBgQvn5OT7zsyZOzPnWpYPkoxuu1VHcYsW8IaSOKwkTGgJM0rAZVbzLGGCx3iOjsQe5d9YnZTJlY/drCTu1BJPa4nkTWFUSRjgtUID/k9PLKIkHtISCt6BN2leSUxMR7b2BAac7otfrwU8oyTkfAROV1mkoAS+NL564EZfwU+ugrVK4PnggGODKgHnUitja3wBn5SwMdhdxxYkMKujOx5uC7wSsF1JmA8bvP6fhMSKFtDvCbwW2Ncp4LqJCAx4cBusdBq4rrdEBDY4Ax/B1UpgptOgdbMVchej8buWBP/73Y/cEGa00W5JCDzL4bwlASXwOScLtSu8RuqenZ5IJCXsXhQ8vwX5jRgWgfLIOCXv6PPkSikZv61590164GwRPwiwzB095fE84GADeE6m3OQ2fhFgyb32qRcS+YYEcCGrdLxAu9KwRtWm2cff8mCF2FM1Am5TYl8JEJFdLFN6/asuScCIAc8HQkm0wybQrirGfDveYplKyuWPgxLtloTAzZYp8bqVgMQEH+BhrwSqlwqUPzxE+bePG50fv0il73+l/DtDZGfnaO7IydpYvZZO/uYLAS3wOBP40zOB2TzlDnxOudePGTUEvj1LucEvDIHCu8O1sXotnTjvkwVgwtIS0t3qQlrCFOf95a4lIKDUFoHKXynSvfEl5xa/Pk2Z3R+a5+SaJ6h86g+afvAFHwnILnchJeFCtxJQfIjbCaMsHCrnPv6hKaSasDo2GSgBzWG03RdZ4b3vqPDBCUOgPqSasHoNAsVvfjGh2LsFMGFxozV0F7Jtyu0/RtMPPE/VmZx3AmLHJosTolCTuUqVMns+ovRD+6g6nW0Y8pTMXUmnYdQrgan79zaMFb8cMQCLn/1I1akMZV/+xIA2G18s0yy+SbPbDpFdKDVxc7f78FNdQQMDgVhgvkozWxOU2XvEnJH0xv10adf7RPOVRadrFxj+jcCTV5WUzgp6ty5k50uUXvcKpe7dRdl9R43/txLttaRcKCsTQZ0B9vXiV6PXnKedu8+BjrZV2iGgBGZbXk8pCXuWOwEdxWetVsJtO27fuTlMoarAM0u2Fpd7c3dyFay1nAjfjCy79rqA9Y7A10jIWHyZgLe1xJjVvVdM2OcJfM0SEdhgLtzCBi8w49ptWkmqZ/udoUYngWc4mFh+ClkvXmcuugO1BpiLbr4psoKSK71UOOgmd3L4qcFgqB+ALHzs8bSW+LPbemLhgNqcEnOb/O8I3hQa8MVE9fav4EYrJ4RKwpAWOGa6HdyyMW0b8zzGY2YOz+3tX+HHn/8HIHp5HZUuPzMAAAAASUVORK5CYII=" width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View Result</a></h6>               </div>
                <nav></nav>
             </div>
             <div>
-               <h4>Graduate Diploma in Software
-                  Engineering (GDSE)(2022-2024)</h4>
-               <div><a href="https://www.ijse.lk/">View School</a></div>
-               <div><a href="https://www.ijse.lk/">View School</a></div>
+               <h6>Graduate Diploma in Software
+                  Engineering (GDSE)(2022-2024)</h6>
+               <div>
+                  <img src="https://www.ijse.lk/images/logos/ijse@1x.png" width="20" usemap="#myMap">
+                  <h6><a href="https://www.ijse.lk/">View Course</a></h6>
+               </div>
+               <div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMUlEQVR4nNVaa4hbVRC+P3z8V6jazTmpa23FH4L43x+Cv4qlUmyxYB8zMbs+thYs1IL4qmJ/dJuKaMUHYkGwWFFRu64VilDU3dqHIrLsVhDdek6ym93mtUm6yR2Z0zUkzWZ77829N5uBgQvn5OT7zsyZOzPnWpYPkoxuu1VHcYsW8IaSOKwkTGgJM0rAZVbzLGGCx3iOjsQe5d9YnZTJlY/drCTu1BJPa4nkTWFUSRjgtUID/k9PLKIkHtISCt6BN2leSUxMR7b2BAac7otfrwU8oyTkfAROV1mkoAS+NL564EZfwU+ugrVK4PnggGODKgHnUitja3wBn5SwMdhdxxYkMKujOx5uC7wSsF1JmA8bvP6fhMSKFtDvCbwW2Ncp4LqJCAx4cBusdBq4rrdEBDY4Ax/B1UpgptOgdbMVchej8buWBP/73Y/cEGa00W5JCDzL4bwlASXwOScLtSu8RuqenZ5IJCXsXhQ8vwX5jRgWgfLIOCXv6PPkSikZv61590164GwRPwiwzB095fE84GADeE6m3OQ2fhFgyb32qRcS+YYEcCGrdLxAu9KwRtWm2cff8mCF2FM1Am5TYl8JEJFdLFN6/asuScCIAc8HQkm0wybQrirGfDveYplKyuWPgxLtloTAzZYp8bqVgMQEH+BhrwSqlwqUPzxE+bePG50fv0il73+l/DtDZGfnaO7IydpYvZZO/uYLAS3wOBP40zOB2TzlDnxOudePGTUEvj1LucEvDIHCu8O1sXotnTjvkwVgwtIS0t3qQlrCFOf95a4lIKDUFoHKXynSvfEl5xa/Pk2Z3R+a5+SaJ6h86g+afvAFHwnILnchJeFCtxJQfIjbCaMsHCrnPv6hKaSasDo2GSgBzWG03RdZ4b3vqPDBCUOgPqSasHoNAsVvfjGh2LsFMGFxozV0F7Jtyu0/RtMPPE/VmZx3AmLHJosTolCTuUqVMns+ovRD+6g6nW0Y8pTMXUmnYdQrgan79zaMFb8cMQCLn/1I1akMZV/+xIA2G18s0yy+SbPbDpFdKDVxc7f78FNdQQMDgVhgvkozWxOU2XvEnJH0xv10adf7RPOVRadrFxj+jcCTV5WUzgp6ty5k50uUXvcKpe7dRdl9R43/txLttaRcKCsTQZ0B9vXiV6PXnKedu8+BjrZV2iGgBGZbXk8pCXuWOwEdxWetVsJtO27fuTlMoarAM0u2Fpd7c3dyFay1nAjfjCy79rqA9Y7A10jIWHyZgLe1xJjVvVdM2OcJfM0SEdhgLtzCBi8w49ptWkmqZ/udoUYngWc4mFh+ClkvXmcuugO1BpiLbr4psoKSK71UOOgmd3L4qcFgqB+ALHzs8bSW+LPbemLhgNqcEnOb/O8I3hQa8MVE9fav4EYrJ4RKwpAWOGa6HdyyMW0b8zzGY2YOz+3tX+HHn/8HIHp5HZUuPzMAAAAASUVORK5CYII=" width="20" usemap="#myMap">
+                  <h6><a href="https://www.ijse.lk/">View Certificate</a></h6>
+               </div>
                <nav></nav>
             </div>
             <div>
-               <h4>G.C.E Advanced Level(2017-2020)</h4>
-               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
-               <div><a href="https://karandenicc.sc.edu.lk/">View School</a></div>
+               <h6>G.C.E Advanced Level(2017-2020)</h6>
+               <div>
+                  <img src="https://media.licdn.com/dms/image/C560BAQF_cIBxAI-psQ/company-logo_200_200/0/1584184567159?e=1703116800&v=beta&t=4vML5KpDx-r6goAuuMqxshwEb81wH0doYUKrfOHjKsI" alt="an image" width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View School</a></h6>
+               </div>
+               <div>
+                  <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEMUlEQVR4nNVaa4hbVRC+P3z8V6jazTmpa23FH4L43x+Cv4qlUmyxYB8zMbs+thYs1IL4qmJ/dJuKaMUHYkGwWFFRu64VilDU3dqHIrLsVhDdek6ym93mtUm6yR2Z0zUkzWZ77829N5uBgQvn5OT7zsyZOzPnWpYPkoxuu1VHcYsW8IaSOKwkTGgJM0rAZVbzLGGCx3iOjsQe5d9YnZTJlY/drCTu1BJPa4nkTWFUSRjgtUID/k9PLKIkHtISCt6BN2leSUxMR7b2BAac7otfrwU8oyTkfAROV1mkoAS+NL564EZfwU+ugrVK4PnggGODKgHnUitja3wBn5SwMdhdxxYkMKujOx5uC7wSsF1JmA8bvP6fhMSKFtDvCbwW2Ncp4LqJCAx4cBusdBq4rrdEBDY4Ax/B1UpgptOgdbMVchej8buWBP/73Y/cEGa00W5JCDzL4bwlASXwOScLtSu8RuqenZ5IJCXsXhQ8vwX5jRgWgfLIOCXv6PPkSikZv61590164GwRPwiwzB095fE84GADeE6m3OQ2fhFgyb32qRcS+YYEcCGrdLxAu9KwRtWm2cff8mCF2FM1Am5TYl8JEJFdLFN6/asuScCIAc8HQkm0wybQrirGfDveYplKyuWPgxLtloTAzZYp8bqVgMQEH+BhrwSqlwqUPzxE+bePG50fv0il73+l/DtDZGfnaO7IydpYvZZO/uYLAS3wOBP40zOB2TzlDnxOudePGTUEvj1LucEvDIHCu8O1sXotnTjvkwVgwtIS0t3qQlrCFOf95a4lIKDUFoHKXynSvfEl5xa/Pk2Z3R+a5+SaJ6h86g+afvAFHwnILnchJeFCtxJQfIjbCaMsHCrnPv6hKaSasDo2GSgBzWG03RdZ4b3vqPDBCUOgPqSasHoNAsVvfjGh2LsFMGFxozV0F7Jtyu0/RtMPPE/VmZx3AmLHJosTolCTuUqVMns+ovRD+6g6nW0Y8pTMXUmnYdQrgan79zaMFb8cMQCLn/1I1akMZV/+xIA2G18s0yy+SbPbDpFdKDVxc7f78FNdQQMDgVhgvkozWxOU2XvEnJH0xv10adf7RPOVRadrFxj+jcCTV5WUzgp6ty5k50uUXvcKpe7dRdl9R43/txLttaRcKCsTQZ0B9vXiV6PXnKedu8+BjrZV2iGgBGZbXk8pCXuWOwEdxWetVsJtO27fuTlMoarAM0u2Fpd7c3dyFay1nAjfjCy79rqA9Y7A10jIWHyZgLe1xJjVvVdM2OcJfM0SEdhgLtzCBi8w49ptWkmqZ/udoUYngWc4mFh+ClkvXmcuugO1BpiLbr4psoKSK71UOOgmd3L4qcFgqB+ALHzs8bSW+LPbemLhgNqcEnOb/O8I3hQa8MVE9fav4EYrJ4RKwpAWOGa6HdyyMW0b8zzGY2YOz+3tX+HHn/8HIHp5HZUuPzMAAAAASUVORK5CYII=" width="20" usemap="#myMap">
+                  <h6><a href="https://karandenicc.sc.edu.lk/">View Result</a></h6>               </div>
                <nav></nav>
             </div>
             <div>
-               <h4>Software engineering degree</h4>
-               <div></div>
-               <nav></nav>
+               <h6>Software engineering degree</h6>
             </div>
          </section>
       </section>
-
+      <!--third section done-->
+      <!--four section start-->
       <section>
          <div>
             <h1>my project</h1>
          </div>
          <section>
             <div>
-               <img src="assets//images/3516355_2148.jpg" alt="an image" width="150" height="150" usemap="#myMap">
+               <img src="assets//images/Screenshot 2023-09-16 215205.png" alt="an image" width="150" height="150" usemap="#myMap">
             </div>
             <div>
                <img src="assets//images/Screenshot 2023-06-21 190530.png" alt="an image" width="250" usemap="#myMap">
@@ -385,7 +474,7 @@
                <img src="assets//images/5481016_2852872.jpg" alt="an image" width="150" height="150" usemap="#myMap">
             </div>
          </section>
-         <section>
+         <siv>
             <h1>Languages I have Mastered</h1>
             <div>
                <img src="assets//images/icons8-figma-96.png" alt="an image" width="50" height="50" usemap="#myMap">
@@ -405,7 +494,7 @@
             <div>
                <img src="assets//images/icons8-html-96 (1).png" alt="an image" width="50" height="50" usemap="#myMap">
             </div>
-         </section>
+         </siv>
       </section>
 
       <section>
