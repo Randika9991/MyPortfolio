@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <style>
+        section {
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            position: absolute;
+         
+        }
+
+        section>div {
+            background-color: blueviolet;
+            width: 180px;
+            height: 50px;
+            display: flex;
+            margin-left: -140px;
+            transition-property: margin-left;
+            margin-top: 50px;
+            border-radius: 0 5px 5px 0;
+        }
+
+        section>div:hover {
+            margin-left: 0px;
+            transition-duration: 1s;
+            transition-property: margin-left;
+        }
+
+        section>div {
+            color: black;
+            top: 0;
+        }
+        section>div>img {
+            width: 40px;
+            height: 45px;
+            top: 2px;
+            bottom: 0;
+            left: 75px;
+            right: 0;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <div>
+            <p>Menu one</p>
+            <img src="assets/image/icons8-download-90.png" alt="">
+        </div>
+        <div>
+            <p>Menu two</p>
+            <img src="assets/image/icons8-download-90.png" alt="">
+        </div>
+        <div>
+            <p>Menu tree</p>
+            <img src="assets/image/icons8-download-90.png" alt="">
+        </div>
+        <div>
+            <p>Menu four</p>
+            <img src="assets/image/icons8-download-90.png" alt="">
+        </div>
+        <div>
+            <p>Menu five</p>
+            <img src="assets/image/icons8-download-90.png" alt="">
+        </div>
+    </section>
+
+
+</body>
+
+</html>

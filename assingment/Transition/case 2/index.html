@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition assignment Case 2</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            background-color: rgb(6, 221, 85);
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        body>div {
+            background-color: grey;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 120px;
+            position: absolute;
+            border: 15px solid white;
+            border-top: 15px solid red;
+        }
+
+        body>div:hover {
+            transition-duration: 2s;
+            transition-property: rotate;
+            rotate: 360deg;
+        }
+
+        body>div:hover p {
+            transition-duration: 2s;
+            transition-property: rotate;
+            rotate: -360deg;
+        }
+
+        body>div>p {
+            color: white;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: max-content;
+            height: max-content;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>RWAD</p>
+    </div>
+</body>
+
+</html>
