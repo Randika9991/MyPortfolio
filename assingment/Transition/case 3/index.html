@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition assignment Case 2</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            background-color: rgb(16, 87, 90);
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        body>section {
+            background-color: rgb(90, 16, 57);
+            width: max-content;
+            height: max-content;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            overflow-y: hidden;
+        }
+
+        body>section>div:first-child{
+            z-index: 7;
+        }
+
+        body>section>div:first-child>img {
+            width: 440px;
+            height: 350px;
+            border: 2px solid white;
+        }
+        body>section>div>a>img {
+            position: absolute;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: -50px;
+            height: 50px;
+        }
+
+        body>section>div:first-child:hover div {
+            height: 350px;
+            transition-duration: 1s;
+            transition-property: height;
+        }
+
+        body>section>div:hover a>img {
+            top: 45%;
+            transition-duration: 1s;
+            transition-property: top;
+        }
+
+
+        body>section>div:first-child>div {
+            border: 2px solid white;
+            height: 0px;
+            background-color: black;
+            position: absolute;
+            margin: auto;
+            opacity: 40%;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        
+    </style>
+</head>
+
+<body>
+<section>
+    <div>
+        <img src="assets/image/3d-car-with-vibrant-colors.jpg" alt="">
+        <a href="">
+            <img src="assets/image/icons8-delete-65.png" alt="">
+        </a>
+        <div></div>
+    </div>
+</section>
+</body>
+
+</html>
