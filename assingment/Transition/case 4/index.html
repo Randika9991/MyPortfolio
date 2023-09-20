@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition assignment Case 2</title>
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <link rel="stylesheet" href="normalize.css">
+    <style>
+        body {
+            background-color: rgb(155, 197, 92);
+            position: relative;
+            height: 100vh;
+            width: 100%;
+        }
+
+        body>div {
+            background-color: grey;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+            border-radius: 120px;
+            position: absolute;
+            border: 15px solid white;
+            border-top: 15px solid rgb(255, 0, 0);
+            box-shadow: 0px 0px 3px 0px #6b5a5a;
+        }
+
+        body>div:hover {
+            transition-duration: 2s;
+            transition-property: rotate;
+            rotate: 360deg;
+        }
+
+        body>div:hover div {
+            transition-duration: 2s;
+            transition-property: rotate;
+
+        }
+
+        body>div>div {
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            margin: auto;
+            top: 64px;
+            bottom: 542px;
+            right: 3px;
+            left: 74px;
+            width: 100px;
+            height: 13px;
+            transform: rotate(-58grad);
+        }
+
+        body>div>div>div {
+            background-color: rgb(255, 0, 0);
+            position: absolute;
+            border-radius: 120px;
+            margin: auto;
+            top: 8px;
+            bottom: 376px;
+            right: -29px;
+            left: 82px;
+            width: 23px;
+            height: 25px;
+            /* transform: rotate(-58grad); */
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div>
+            <div></div>
+        </div>
+    </div>
+</body>
+
+</html>
