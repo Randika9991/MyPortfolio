@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animations</title>
+    <style>
+        body>div {
+            background-color: red;
+            display: flex;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            animation-name: anima;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+
+        body>div>img{
+            height: 100vh;
+            width: 100vw;
+        }
+
+        body{
+            overflow: hidden;
+        }
+
+        @keyframes anima {
+            0% {
+               margin-left: 0;
+            }
+            25%{
+                margin-left: -100vw;
+
+
+            }50%{
+                margin-left: -200vw;
+
+
+            }75%{
+                margin-left: -300vw;
+            }
+
+            100% {
+                margin-left: -400vw;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="assets/image/3.jpg" alt="">
+        <img src="assets/image/4.jpg" alt="">
+        <img src="assets/image/3.jpg" alt="">
+        <img src="assets/image/5.jpg" alt="">
+        <img src="assets/image/6.jpg" alt="">
+        <img src="assets/image/5.jpg" alt="">
+    </div>
+
+</body>
+
+</html>

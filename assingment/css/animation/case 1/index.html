@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <title>Animations</title>
+    <style>
+        body {
+            position: relative;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 50px;
+            background-color: rgb(0, 255, 42);
+        }
+
+        body>div {
+            position: absolute;
+            width: 150px;
+            height: 100px;
+            border-radius: 20px;
+        }
+
+        body>div {
+            color: red;
+            animation-name: anima;
+            /*anima eka link karanne meken*/
+            animation-duration: 5s;
+            animation-iteration-count: 5;
+            /*  animation siduwana wara ganna  */
+            position: relative;
+            left: 0;
+            animation-delay: 2s;
+            /* thappara dekka idala css add wenne */
+        }
+
+        @keyframes anima {
+            0% {
+                left: 0;
+                top: 0;
+                background: rgb(0, 20, 1);
+                transform: rotate(-360grad);
+            }
+
+            25% {
+                top: 0;
+                left: 500px;
+                background: rgb(165, 58, 42);
+                transform: rotate(360grad);
+
+            }
+
+
+            50% {
+                top: 400px;
+                left: 500px;
+                background: rgb(165, 165, 42);
+                transform: rotate(-360grad);
+            }
+
+            75% {
+                top: 400px;
+                left: 0;
+                background: rgb(159, 42, 165);
+                transform: rotate(360grad);
+            }
+
+            100% {
+                left: 0;
+                top: 0;
+                background: rgb(128, 68, 0);
+                transform: rotate(-360grad);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
