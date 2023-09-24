@@ -8,7 +8,7 @@
    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,user-scalable=no">
    <title>my portfolio</title>
    <meta charset="UTF-8"> <!---->
-   <LINK rel="icon" href="icons8-ui-60 (1).png">
+   <LINK rel="icon" href="DRK (1).png">
    <meta name="keyword" content="IJSE,GDSE,HTML,ABDS"> <!--type karana ekata adala site eka denne meken-->
    <meta name="description" content="this is my first website"> <!--type karana ekata adala site eka denne meken-->
    <meta name="owner" content="dulaksha randika">
@@ -16,6 +16,8 @@
    <meta name="theme-color" content="red"> <!--add color-->
    <link rel="stylesheet" href="assets/css/8.0.1_normalize.css">
    <link rel="stylesheet" href="assets/font-awsome/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
    <style>
       /*--all styl--*/
       * {
@@ -26,6 +28,7 @@
          text-decoration: none;
          color: white;
       }
+
       /*header style*/
       header {
          background-color: #191E23;
@@ -69,6 +72,7 @@
       }
 
       body>header>div>h1 {
+
          box-shadow: 1px 2px 9px 1px #6b5a5a;
       }
 
@@ -110,17 +114,24 @@
       main>section:first-child {
          filter: saturate(1.4);
          position: relative;
-         height: 80vh;
+         height: 89vh;
       }
 
       main>section:first-child>div:nth-child(2)>img {
+         box-shadow: 0px 3px 2px 0px rgb(255, 255, 255);
          z-index: -1;
          position: absolute;
          top: 15%;
          border-radius: 1344px;
          left: 10%;
          width: 24.36%;
-         box-shadow: 0px 3px 2px 0px rgb(255, 1, 79);
+      }
+
+      main>section:first-child>div:nth-child(3)>div {
+         position: relative;
+         box-shadow: 0px 3px 6px 0px rgb(255, 255, 255);
+         border-radius: 20px;
+         margin: auto;
       }
 
       main>section:first-child>div:nth-child(3) {
@@ -133,9 +144,15 @@
          z-index: -1;
       }
 
-      main>section:first-child>div:nth-child(3)>div>img {
-         box-shadow: 0px 3px 6px 0px rgb(255, 1, 79);
+      main>section:first-child>div:nth-child(3)>div>a>img:hover {
+         box-shadow: 0px 6px 1px 5px rgb(255, 1, 79);
          border-radius: 20px;
+         animation-name: anima;
+         animation-duration: 10s;
+         animation-iteration-count: 5;
+         position: relative;
+         left: 0;
+         animation-delay: 2s;
       }
 
       /*div 4 */
@@ -189,13 +206,95 @@
          box-shadow: 0px 3px 6px 0px rgb(64, 12, 28);
       }
 
+      main>section:first-child>div:nth-child(4)>hgroup>article>button:hover {
+         box-shadow: 0px 0px 1px 5px rgb(255, 1, 79);
+         border-radius: 12px;
+      }
+
+      main>section:first-child>div:nth-child(5){
+
+         position: absolute;
+         width: 166px;
+         height: 136px;
+         right: 69px;
+         left: 67%;
+         top: 22%;
+         border-radius: 12px;
+         z-index: 138;
+         animation-name: shadow;
+         animation-duration: 11s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+      }
+
+      main>section:first-child>div:nth-child(7){
+         position: absolute;
+         right: 49px;
+         width: 166px;
+         height: 136px;
+         left: 77%;
+         margin: 0;
+         border-radius: 12px;
+         z-index: -110;
+         opacity: 12%;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+         animation-name: shadow;
+         animation-duration: 10s;
+         animation-iteration-count: infinite;
+         animation-delay: 6s;
+      }
+      @keyframes shadow {
+         from{
+            box-shadow: 500px 100px 59px 4px rgba(0, 254, 255, 0.51);
+         }to {
+             box-shadow: 0px 0px 100px 0px rgba(255, 254, 255, 0.46);
+
+          }
+      }
+
+      main>section:first-child>div:nth-child(6){
+         width: 166px;
+         height: 136px;
+         position: absolute;
+         right: 0;
+         margin: 0;
+         border-radius: 12px;
+         top: 58%;
+
+         animation-name: shadowtwo;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+      }
+      @keyframes shadowtwo {
+         0% {
+            box-shadow: 0px 32px 178px 5px rgba(255, 1, 79, 0.68);
+         }
+         25% {
+
+            box-shadow: -360px 32px 178px 5px rgb(255, 1, 79);
+
+         }
+         50% {
+            box-shadow: -540px 32px 178px 5px rgb(255, 1, 79);
+         }
+         75% {
+
+            box-shadow: -360px 32px 178px 5px rgb(255, 1, 79);
+         }
+         100% {
+            box-shadow: -100px 32px 178px 5px rgb(255, 1, 79);
+         }
+      }
+
+
       /*----------------------------------------------section:second create---------------------------------------------*/
       /*main second section*/
       main>section:nth-child(2) {
          filter: saturate(1.4);
          position: relative;
          height: 80vh;
-         background:#24282C;
+         background: #24282C;
       }
 
       main>section:nth-child(2)>article {
@@ -225,6 +324,81 @@
          top: 46%;
       }
 
+      main>section:nth-child(2)>div:nth-child(6){
+
+         position: absolute;
+         width: 166px;
+         height: 136px;
+         right: 69px;
+         left: 67%;
+         top: 22%;
+         border-radius: 12px;
+         z-index: 138;
+         animation-name: shadowchildtwo;
+         animation-duration: 11s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+      }
+
+      main>section:nth-child(2)>div:nth-child(5){
+         position: absolute;
+         right: 49px;
+         width: 166px;
+         height: 136px;
+         left: 77%;
+         margin: 0;
+         border-radius: 12px;
+         z-index: -110;
+         opacity: 12%;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+         animation-name: shadowchildtwo;
+         animation-duration: 10s;
+         animation-iteration-count: infinite;
+         animation-delay: 6s;
+      }
+      @keyframes shadowchildtwo {
+         from{
+            box-shadow: 500px 100px 59px 4px rgba(0, 254, 255, 0.51);
+         }to {
+             box-shadow: 0px 0px 100px 0px rgba(255, 254, 255, 0.46);
+
+          }
+      }
+
+      main>section:nth-child(2)>div:nth-child(7) {
+         width: 166px;
+         height: 136px;
+         position: absolute;
+         right: 36%;
+         margin: 0;
+         border-radius: 12px;
+         top: 58%;
+         animation-name: shadowchildtwoshadowtwo;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+      }
+      @keyframes shadowchildtwoshadowtwo {
+         0% {
+            box-shadow: 0px 32px 178px 5px rgba(255, 255, 255, 0.68);
+         }
+         25% {
+
+            box-shadow: -360px 32px 178px 5px rgba(255, 1, 79, 0.18);
+
+         }
+         50% {
+            box-shadow: -540px 32px 178px 5px rgba(255, 1, 79, 0.18);
+         }
+         75% {
+
+            box-shadow: -360px 32px 178px 5px rgba(255, 255, 255, 0.68);
+         }
+         100% {
+            box-shadow: -100px 32px 178px 5px rgba(255, 255, 255, 0.68);
+         }
+      }
+
       /*----------------------------------------------section:third create---------------------------------------------*/
       /*main third section*/
       main>section:nth-child(3) {
@@ -235,15 +409,15 @@
       main>section:nth-child(3)>section {
          filter: saturate(1.4);
          position: absolute;
-         left: 20vw;
-         top: 64px;
-         bottom: 54px;
-         right: 20vw;
+         left: 15%;
+         top: 8%;
+         bottom: 5%;
+         right: 15%;
          margin: auto;
          display: grid;
          grid-template-rows: repeat(2, 1fr);
          grid-template-columns: repeat(2, 1fr);
-         gap: 58px;
+         gap: 47px;
          border-radius: 20px;
       }
 
@@ -253,6 +427,22 @@
          width: 98%;
          height: 96%;
          border-radius: 20px;
+
+      }
+
+      main>section:nth-child(3)>section>div:first-child {
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(2) {
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(3) {
+         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(4) {
          box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
       }
 
@@ -276,7 +466,6 @@
          width: 98%;
          height: 96%;
          border-radius: 20px;
-         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
       }
 
       main>section:nth-child(3)>section>div>div {
@@ -290,41 +479,290 @@
          border-radius: 20px;
       }
 
+      main>section:nth-child(3)>section>div:nth-child(5) {
+         background-color: black;
+         position: absolute;
+         width: 10px;
+         height: 100%;
+         left: -106%;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+         border-radius: 12px;
+         z-index: -1;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(6) {
+         background-color: black;
+         position: absolute;
+         width: 10px;
+         height: 100%;
+         left: 0%;
+         right: 0%;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+         border-radius: 12px;
+         z-index: -1;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(7) {
+         background-color: black;
+         position: absolute;
+         right: -3%;
+         top: 19%;
+         bottom: 74%;
+         margin: auto;
+         width: 21px;
+         height: 5%;
+         left: -3%;
+         z-index: 1;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(8) {
+         background-color: black;
+         position: absolute;
+         right: -3%;
+         top: 80%;
+         bottom: 19%;
+         margin: auto;
+         width: 22px;
+         height: 5%;
+         left: -3%;
+         z-index: 1;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(9) {
+         background-color: black;
+         position: absolute;
+         width: 23px;
+         height: 5%;
+         left: -115%;
+         right: -9%;
+         top: 0;
+         bottom: 55%;
+         margin: auto;
+         border-radius: 12px;
+         z-index: -1;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+      }
+
+      main>section:nth-child(3)>section>div:nth-child(10) {
+         background-color: black;
+         position: absolute;
+         width: 23px;
+         height: 5%;
+         left: -104%;
+         right: 2%;
+         top: 0;
+         bottom: -61%;
+         margin: auto;
+         border-radius: 12px;
+         z-index: 1;
+         box-shadow: 0px 0px 40px 4px rgba(255, 254, 255, 0.46);
+      }
+
+
       /*----------------------------------------------section:four create---------------------------------------------*/
       main>section:nth-child(4) {
          position: relative;
          height: 110vh;
-         background:#24282C;
+         background: #24282C;
       }
 
       main>section:nth-child(4)>section {
          filter: saturate(1.4);
          position: relative;
-         top: 31px;
+         top: 10px;
          bottom: 75%;
          margin: auto;
-         display: grid;
-         grid-template-rows: repeat(1, 1fr);
-         grid-template-columns: repeat(3, 1fr);
-         gap: 5vw;
-         width: 84vw;
+         display: flex;
+         width: 94vw;
          height: 66vh;
       }
 
-      main>section:nth-child(4)>section>div {
-         margin: auto;
+      main>section:nth-child(4)>section>div:first-child{
          border-radius: 20px;
-         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
+         text-align: center;
+         font-size: 28px;
+      }
+
+      main>section:nth-child(4)>section>div:nth-child(2){
+         border-radius: 20px;
+         text-align: center;
+         font-size: 28px;
+      }
+
+      main>section:nth-child(4)>section>div:last-child{
+         border-radius: 20px;
          text-align: center;
          font-size: 28px;
       }
 
       main>section:nth-child(4)>section>div>img {
-         width: 25vw;
-         height: 25vh;
+         box-shadow: 0px 0px 123px 0px rgba(255, 255, 255, 0.68);
+         animation-name: shadowchildfourshadowfour;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+      }
+
+      @keyframes shadowchildfourshadowfour {
+         0% {
+            box-shadow: 0px 30px 120px 0px rgba(0, 254, 255, 0.51);
+         }
+         25% {
+            box-shadow: -0px 25px 100px 0px rgba(255, 255, 255, 0.51);
+         }
+         50% {
+            box-shadow: 50px 20px 80px 0px rgba(255, 255, 255, 0.51);
+         }
+         75% {
+
+            box-shadow: -50px 15px 60px 0px rgba(255, 255, 255, 0.51);
+         }
+         100% {
+            box-shadow: 0px 5px 20px 0px rgba(255, 255, 255, 0.68);
+         }
+      }
+
+      main>section:nth-child(4)>section>div:first-child>img {
+         position: absolute;
+         border-radius: 20px;
+         width: 20vw;
+         height: 30vh;
+         top: 0;
+         left: 0;
+         right: 70%;
+         bottom:0;
+         margin: auto;
+      }
+
+      main>section:nth-child(4)>section>div:last-child>img {
+         position: absolute;
+         border-radius: 20px;
+         width: 20vw;
+         height: 30vh;
+         top: 0;
+         left: 0;
+         right: -70%;
+         bottom: 0;
+         margin: auto;
+      }
+
+      main>section:nth-child(4)>section>div>img {
+         width: 43vw;
+         height: 62vh;
          border-radius: 20px;
       }
 
+      main>section:nth-child(4)>section>div:first-child>div {
+         position: absolute;
+         top: -46%;
+         width: 22%;
+         height: 0;
+         border-radius: 20px;
+         overflow-y: hidden;
+      }
+
+      main>section:nth-child(4)>section>div:first-child:hover div{
+         position: absolute;
+         background-color: #d5cdd5;
+         top: 27%;
+         bottom: 31%;
+         width: 22%;
+         height: 46%;
+         left: 4%;
+         right: 67%;
+         border-radius: 20px;
+         transition-duration: 1s;
+         transition-property: height;
+         z-index: 1;
+         opacity: 60%;
+      }
+
+      main>section:nth-child(4)>section>div:nth-child(2)>div {
+         position: absolute;
+         top: -46%;
+         width: 22%;
+         height: 0;
+         border-radius: 20px;
+         overflow-y: hidden;
+      }
+
+      main>section:nth-child(4)>section>div:nth-child(2):hover div{
+         position: absolute;
+         background-color: #d5cdd5;
+         top: 0%;
+         bottom: 31%;
+         width: 46%;
+         height: 94%;
+         left: 27%;
+         right: 67%;
+         border-radius: 20px;
+         transition-duration: 1s;
+         transition-property: height;
+         z-index: 1;
+         opacity: 60%;
+      }
+
+      main>section:nth-child(4)>section>div:last-child>div {
+         position: absolute;
+         top: -46%;
+         width: 22%;
+         height: 0;
+         border-radius: 20px;
+         overflow-y: hidden;
+      }
+
+      main>section:nth-child(4)>section>div:last-child:hover div{
+         position: absolute;
+         background-color: #d5cdd5;
+         top: 27%;
+         bottom: 31%;
+         width: 22%;
+         height: 46%;
+         left: 74%;
+         right: 67%;
+         border-radius: 20px;
+         transition-duration: 1s;
+         transition-property: height;
+         z-index: 1;
+         opacity: 60%;
+      }
+
+      main>section:nth-child(4)>section>div>div>a>img {
+         position: absolute;
+         background-color: #d5cdd5;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         margin: auto;
+         width: 15%;
+         height: 15%;
+         border-radius: 20px;
+         transition-duration: 1s;
+         transition-property: height;
+         z-index: 2;
+         visibility: visible;
+      }
+
+      main>section:nth-child(4)>section>div:nth-child(2)>figure{
+         position: relative;
+         width: 62%;
+         left: 0;
+         right: 0;
+         top: 0;
+         bottom: 0;
+         margin: auto;
+      }
+      /*text*/
       main>section:nth-child(4)>div:nth-child(3)>h3 {
          position: relative;
          font-size: 28px;
@@ -352,14 +790,15 @@
          right: 22vw;
          text-align: center;
          margin: auto;
-         font-size: 23px;
+         font-size: 30px;
       }
 
       main>section:nth-child(4)>div:nth-child(4)>div {
          margin: auto;
-         box-shadow: 0px 3px 6px 0px rgb(255, 1, 79);
+         box-shadow: 0px 3px 6px 0px rgb(255, 255, 255);
          border-radius: 16px;
       }
+
       /*----------------------------------------------section:five create---------------------------------------------*/
 
       main>section:nth-child(5) {
@@ -380,24 +819,89 @@
          width: 77vw;
       }
 
-      main>section:nth-child(5)>section>div {
+      main>section:nth-child(5)>section>div{
+         position: relative;
          margin: auto;
          border-radius: 20px;
          box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
          text-align: center;
          font-size: 0px;
-         width: 20vw;
+         width: 16vw;
          height: 40vh;
          background: #2F2F2F;
+         animation-name: shadowchildfiveshadowfive;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
+
+      }
+
+      @keyframes shadowchildfiveshadowfive {
+         0% {
+            box-shadow: 0px 0px 1px 5px rgba(0, 254, 255, 0.51);
+         }
+         25% {
+            box-shadow: -5px 0px 1px 5px rgba(255, 255, 255, 0.51);
+         }
+         50% {
+            box-shadow: 5px 0px 1px 5px rgba(255, 255, 255, 0.51);
+         }
+         75% {
+
+            box-shadow: -5px 0px 1px 0px rgba(255, 255, 255, 0.51);
+         }
+         100% {
+            box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.68);
+         }
       }
 
       main>section:nth-child(5)>section>div>img {
          position: relative;
-         top: 24px;
-         width: 17vw;
-         height: 33vh;
+         top: 12px;
+         width: 85%;
+         height: 92%;
          border-radius: 20px;
          bottom: 31vh;
+      }
+
+      main>section:nth-child(5)>section>div>div {
+         position: absolute;
+         top: -46%;
+         width: 22%;
+         height: 0;
+         border-radius: 20px;
+         overflow-y: hidden;
+      }
+
+      main>section:nth-child(5)>section>div:hover div{
+         position: absolute;
+         background-color: #d5cdd5;
+         top: 0;
+         bottom: 0;
+         width: 100%;
+         height: 40vh;
+         border-radius: 20px;
+         transition-duration: 1s;
+         transition-property: height;
+         z-index: 1;
+         opacity: 60%;
+      }
+
+      main>section:nth-child(5)>section>div>div>a>img {
+         position: absolute;
+         background-color: #d5cdd5;
+         top: 0;
+         bottom: 0;
+         left: 0;
+         right: 0;
+         margin: auto;
+         width: 28%;
+         height: 53px;
+         border-radius: 20px;
+         transition-duration: 1s;
+         transition-property: height;
+         z-index: 2;
+         visibility: visible;
       }
 
       /*----------------------------------------------section:six create---------------------------------------------*/
@@ -405,7 +909,7 @@
          position: relative;
          height: 90vh;
          filter: saturate(1.4);
-         background:#24282C;
+         background: #24282C;
       }
 
       main>section:nth-child(6)>section {
@@ -424,16 +928,39 @@
          left: 34px;
          margin: auto;
          border-radius: 20px;
-         box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
          text-align: center;
          width: 19vw;
          display: flex;
          height: 57vh;
          color: white;
-         background: black;
+         background-color: #000000;
+         box-shadow: 0px 4px 6px 0px rgb(0, 0, 0);
+         animation-name: shadowchildsixshadowsix;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
       }
 
-      main>section:nth-child(6)>section>div >div {
+      @keyframes shadowchildsixshadowsix {
+         0% {
+            box-shadow: 0px 0px 1px 5px rgba(0, 254, 255, 0.51);
+         }
+         25% {
+            box-shadow: -5px 0px 1px 5px rgba(255, 255, 255, 0.51);
+         }
+         50% {
+            box-shadow: 5px 0px 1px 5px rgba(255, 255, 255, 0.51);
+         }
+         75% {
+
+            box-shadow: -5px 0px 1px 0px rgba(255, 255, 255, 0.51);
+         }
+         100% {
+            box-shadow: 0px 0px 1px 0px rgba(255, 255, 255, 0.68);
+         }
+      }
+
+      main>section:nth-child(6)>section>div>div {
          text-align: center;
          margin-bottom: auto;
          margin-top: auto;
@@ -441,21 +968,23 @@
          margin-right: auto;
       }
 
-      main>section:nth-child(6)>section>div >div>img{
+      main>section:nth-child(6)>section>div>div>img {
          top: 18px;
          width: 13vw;
       }
 
-      main>section:nth-child(6)>section>div >div>h4{
+      main>section:nth-child(6)>section>div>div>h4 {
          position: relative;
          top: 1vh;
          font-size: 26px;
       }
-      main>section:nth-child(6)>section>div >div>article{
+
+      main>section:nth-child(6)>section>div>div>article {
          position: relative;
          top: 3vh;
          font-size: 20px;
       }
+
       /*----------------------------------------------section:seven create---------------------------------------------*/
       main>section:nth-child(7) {
          position: relative;
@@ -486,27 +1015,53 @@
          height: 49vh;
          border-radius: 20px;
          box-shadow: 0px 4px 40px 0px rgb(255, 255, 255);
+
+         animation-name: shadowchildsevenshadowseven;
+         animation-duration: 5s;
+         animation-iteration-count: infinite;
+         animation-delay: 2s;
       }
 
-      main>section:nth-child(7)>section>div:first-child>img{
+      @keyframes shadowchildsevenshadowseven {
+         0% {
+            box-shadow: 0px 5px 0px 0px rgba(0, 254, 255, 0.51);
+         }
+         25% {
+            box-shadow: -0px 5px 80px 0px rgba(255, 255, 255, 0.51);
+         }
+         50% {
+            box-shadow: 50px 5px 40px 0px rgba(255, 255, 255, 0.51);
+         }
+         75% {
+
+            box-shadow: -50px 5px 20px 0px rgba(255, 255, 255, 0.51);
+         }
+         100% {
+            background: black;
+            box-shadow: 0px 5px 5px 0px rgba(255, 255, 255, 0.68);
+         }
+      }
+      main>section:nth-child(7)>section>div:first-child>img {
          width: 15vw;
          height: 40vh;
          border-radius: 20px;
-         box-shadow: 0px 4px 56px 0px rgb(255, 255, 255);
       }
 
-      main>section:nth-child(7)>section>div:last-child>img{
+      main>section:nth-child(7)>section>div:last-child>img {
          width: 15vw;
          height: 40vh;
          border-radius: 20px;
-         box-shadow: 0px 4px 56px 0px rgb(255, 255, 255);
       }
+
+
+
       /*----------------------------------------------section:Eight  create---------------------------------------------*/
       main>section:nth-child(8) {
          position: relative;
          height: 110vh;
-         background:#24282C;
+         background: #24282C;
       }
+
       main>section:nth-child(8)>section {
          position: absolute;
          right: 5vw;
@@ -519,12 +1074,14 @@
          grid-template-columns: repeat(2, 1fr);
          gap: 2vw;
       }
+
       main>section:nth-child(8)>section>section {
          background-color: #191E23;
          width: auto;
          height: 60.5vh;
          box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
       }
+
       main>section:nth-child(8)>section>section:first-child {
          width: 18vw;
          /* margin: auto; */
@@ -532,30 +1089,33 @@
          border-radius: 30px;
          box-shadow: 0px 3px 1px 0px rgb(255, 255, 255);
       }
+
       main>section:nth-child(8)>section>section:first-child>img {
          border-radius: 30px 30px 0px 0px;
          width: 18vw;
-          margin: auto;
+         margin: auto;
          position: relative;
          top: 0vh;
       }
+
       main>section:nth-child(8)>section>section:first-child>h3 {
          position: relative;
          top: 1vh;
          text-align: center;
       }
 
-      main>section:nth-child(8)>section>section:last-child>form>fieldset{
+      main>section:nth-child(8)>section>section:last-child>form>fieldset {
          width: 60vw;
          height: 60vh;
       }
 
-      main>section:nth-child(8)>section>section:first-child>div{
-         display:inline-flex;
+      main>section:nth-child(8)>section>section:first-child>div {
+         display: inline-flex;
          position: relative;
-         top:3vh;
+         top: 3vh;
       }
-      main>section:nth-child(8)>section>section:first-child>div>img{
+
+      main>section:nth-child(8)>section>section:first-child>div>img {
          box-shadow: 0px 2px 2px 0px rgb(255, 255, 255);
          border-radius: 12px;
       }
@@ -569,21 +1129,23 @@
          width: 35vw;
       }
 
-      main>section:nth-child(8)>section>section:last-child>form>fieldset>div>input{
+      main>section:nth-child(8)>section>section:last-child>form>fieldset>div>input {
          box-shadow: 0px 2px 2px 0px rgb(255, 255, 255);
          width: 100%;
          background-color: #1D1D1D;
          height: 48%;
          color: white;
       }
-      main>section:nth-child(8)>section>section:last-child>form>fieldset>div>textarea{
+
+      main>section:nth-child(8)>section>section:last-child>form>fieldset>div>textarea {
          box-shadow: 0px 2px 2px 0px rgb(255, 255, 255);
          width: 100%;
          background-color: #1D1D1D;
          height: 67%;
          color: white;
       }
-      main>section:nth-child(8)>section>section:last-child>form>fieldset>div:last-child>input{
+
+      main>section:nth-child(8)>section>section:last-child>form>fieldset>div:last-child>input {
          box-shadow: 0px 2px 2px 0px rgb(255, 255, 255);
          width: 100%;
          background-color: #1D1D1D;
@@ -599,12 +1161,14 @@
          position: relative;
          background-color: #24282C;
       }
+
       body>footer>nav {
          width: 20%;
          position: relative;
          left: 5vw;
-         display:g
+
       }
+
       body>footer>div {
          width: 40%;
          position: absolute;
@@ -614,27 +1178,30 @@
          gap: 5vw;
 
       }
+
       body>footer>div>div {
          box-shadow: 0px 4px 6px 0px rgb(255, 1, 79);
          border-radius: 14px;
       }
 
       body>footer>div>div>img {
-         width:4vw;
+         width: 4vw;
       }
 
       body>footer>div>div>img {
-         width:4vw;
+         width: 4vw;
       }
+
       body>footer>cite {
-         width:100%;
+         width: 100%;
          position: absolute;
          text-align: center;
          top: 20vh;
          font-size: 18px;
       }
+
       body>footer>small {
-         width:100%;
+         width: 100%;
          top: 21vh;
          position: absolute;
          font-size: 12px;
@@ -642,68 +1209,120 @@
       }
 
 
+      /*----------------------------------------------media query 320px....---------------------------------------------*/
+
+      @media (min-width :320px) and (max-width: 1023px){
+      /*---------------------------------------------- create  header---------------------------------------------*/
+
+
+
+
+      }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      @media (min-width: 1024px) and (max-width: 1224px){
+         /* home -------------------------------------- */
+         main>section:first-child>div:nth-child(3) {
+            top: 76%;
+         }
+      }
+
+      @media (min-width: 1224px) and (max-width: 1440px){
+         /* home -------------------------------------- */
+         main>section:first-child>div:nth-child(3) {
+            top: 80%;
+         }
+      }
+
+
    </style>
 </head> <!--close tag eka-->
-
+<!--#################################################################################################################-->
 <body>
    <header>
       <div>
-         <h1><a href="#home"><img src="assets/images/icons8-github-400.png" width="78"></a></h1>
+         <h1><a href="#home"><img src="DRK (1).png" width="78"></a></h1>
          <ul>
-            <li><a href="#aboutme"><i class="fa-solid fa-sitemap"></i>About me</a></li>
-            <li><a href="#education"><i class="fa-solid fa-cart-shopping"></i>Education</a></li>
-            <li><a href="#project"><i class="fa-solid fa-file-invoice"></i>Project</a></li>
-            <li><a href="#gallery"><i class="fa-solid fa-cart-shopping"></i>Gallery</a></li>
-            <li><a href="#Expertise"><i class="fa-solid fa-cart-shopping"></i>Expertise</a></li>
-            <li><a href="#Contact"><i class="fa-solid fa-file-invoice"></i>Contact</a></li>
+            <li><a href="#aboutme">About me</a></li>
+            <li><a href="#education"></i>Education</a></li>
+            <li><a href="#project"></i>Project</a></li>
+            <li><a href="#gallery"></i>Gallery</a></li>
+            <li><a href="#Expertise"></i>Expertise</a></li>
+            <li><a href="#Contact"></i>Contact</a></li>
          </ul>
+      </div>
+      <div>
+         <li><a>About me</a></li>
       </div>
    </header>
    <main>
       <!-- first section start-->
       <section id="home">
          <div>
-            <h1>Home</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">Home</h1>
          </div>
          <div>
             <img src="assets//images/IMG_20230622_151316.JPG" alt="an image" width="500" usemap="#myMap">
          </div>
          <div>
             <div>
-               <img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="70" usemap="#myMap">
+               <a href="https://www.facebook.com/"><img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="70" usemap="#myMap"></a>
             </div>
             <div>
-               <img src="assets//images/icons8-stack-overflow-300 (1).png" alt="an image" width="70" usemap="#myMap">
+               <a href="https://stackoverflow.com/users/22614194/randika-kumarasiri"><img src="assets//images/icons8-stack-overflow-300 (1).png" alt="an image" width="70" usemap="#myMap"></a>
             </div>
             <div>
-               <img src="assets//images/icons8-linkedin-512.png" alt="an image" width="70" usemap="#myMap">
+               <a href="https://www.linkedin.com/in/randika-kumarasiri-028121269/"><img src="assets//images/icons8-linkedin-512.png" alt="an image" width="70" usemap="#myMap"></a>
             </div>
             <div>
-               <img src="assets//images/icons8-github-400.png" alt="an image" width="70" usemap="#myMap">
+               <a href="https://github.com/Randika9991"><img src="assets//images/icons8-github-400.png" alt="an image" width="70" usemap="#myMap"></a>
             </div>
          </div>
-
          <div>
             <hgroup>
                <h1>welcome...</h1>
-               <h3>
+               <h3
+                  class="animate__animated animate__bounce animate__infinite	animate__backInDown animate__repeat-1	1 animate__delay-1s	2s">
                   <p>Hello, i'm <b><samp>Dulaksha Randika</samp></b>
                </h3>
                <article>
                   <h4>a full stack developer from Sri Lanka</h4>
                   <h6>best and user-friendly web applications,<br>i hava expertise in borth front-end and back-end
                      development</h6>
-                  <button type="text">About me</button>
+                  <button type="text" a href="#aboutme">About me</button>
+
                </article>
             </hgroup>
             <article></article>
          </div>
+         <div> </div>
+         <div> </div>
+         <div> </div>
       </section>
       <!--first section done-->
       <!--second section start-->
       <section id="aboutme">
          <div>
-            <h1 >About me</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">About me</h1>
          </div>
          <article>
             <p>
@@ -727,12 +1346,15 @@
                   email : kumarasirirandika0706@gmail.com</h6>
             </article>
          </div>
+         <div> </div>
+         <div> </div>
+         <div> </div>
       </section>
       <!--second section close-->
       <!--third section open-->
-      <section  id="education">
+      <section id="education">
          <div>
-            <h1>Education</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">Education</h1>
          </div>
          <section>
             <div>
@@ -785,20 +1407,28 @@
             <div>
                <h6>Software engineering degree</h6>
             </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
+            <div> </div>
          </section>
       </section>
       <!--third section done-->
       <!--four section start-->
       <section id="project">
          <div>
-            <h1>My project</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">My project</h1>
          </div>
          <section>
             <div>
+               <div><a href="https://github.com/Randika9991?tab=repositories"><img src="assets/images/icons8-click-100.png"></a></div>
                <img src="assets//images/Screenshot 2023-09-16 215205.png" alt="an image" width="250" height="200"
                   usemap="#myMap">
             </div>
             <div>
+               <div><a href="https://github.com/Randika9991?tab=repositories"><img src="assets/images/icons8-click-100.png"></a></div>
                <img src="assets//images/Screenshot 2023-06-21 190530.png" alt="an image" width="450" usemap="#myMap">
                <figure>
                   <figcaption>
@@ -809,58 +1439,64 @@
                </figure>
             </div>
             <div>
+               <div><a href="https://github.com/Randika9991?tab=repositories"><img src="assets/images/icons8-click-100.png"></a></div>
                <img src="assets//images/Screenshot 2023-09-16 215638.png" alt="an image" width="250" height="200"
                   usemap="#myMap">
             </div>
          </section>
          <h3>Languages I have Mastered</h3>
          <div>
-
             <div>
-               <img src="assets//images/icons8-figma-96.png" alt="an image" width="50" height="50" usemap="#myMap">
+               <img src="assets//images/icons8-figma-96.png" alt="an image" width="70" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-css-96.png" alt="an image" width="50" height="50" usemap="#myMap">
+               <img src="assets//images/icons8-css-96.png" alt="an image" width="70" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-java-240.png" alt="an image" width="50" height="50" usemap="#myMap">
+               <img src="assets//images/icons8-java-240.png" alt="an image" width="70" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-javascript-96.png" alt="an image" width="50" height="50" usemap="#myMap">
+               <img src="assets//images/icons8-javascript-96.png" alt="an image" width="70" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-mysql-96 (1).png" alt="an image" width="50" height="50" usemap="#myMap">
+               <img src="assets//images/icons8-mysql-96 (1).png" alt="an image" width="70" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/icons8-html-96 (1).png" alt="an image" width="50" height="50" usemap="#myMap">
+               <img src="assets//images/icons8-html-96 (1).png" alt="an image" width="70" usemap="#myMap">
             </div>
          </div>
       </section>
       <!--four section done-->
       <!--five section start-->
-      <section >
+      <section>
          <div>
-            <h1>My assingment</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">My assingment</h1>
          </div>
 
          <section>
             <div>
-               <img src="assets//images/1.jpg" alt="an image" width="150" usemap="#myMap">
+               <div><a href="assingment/css/Case 1/twopage.html"><img src="assets/images/icons8-click-100.png"></a></div>
+               <img src="assets//images/Screenshot 2023-09-23 005123.png" alt="an image" width="150" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/2.jpg" alt="an image" width="150" usemap="#myMap">
+               <div><a href="assingment/css/Case 2/index.html"><img src="assets/images/icons8-click-100.png"></a></div>
+               <img src="assets//images/case2.png" alt="an image" width="150" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/3.jpg" alt="an image" width="150" usemap="#myMap">
+               <div><a href="assingment/css/Case 3/index.html"><img src="assets/images/icons8-click-100.png"></a></div>
+               <img src="assets//images/case3.png" alt="an image" width="150" usemap="#myMap">
             </div>
             <div>
-               <img src="assets//images/4.jpg" alt="an image" width="150" usemap="#myMap">
+               <div><a href="assingment/css/Case 4/index.html"><img src="assets/images/icons8-click-100.png"></a></div>
+               <img src="assets//images/case4.png" alt="an image" width="150" usemap="#myMap"></a>
             </div>
             <div>
-               <img src="assets//images/5.jpg" alt="an image" width="150" usemap="#myMap">
+               <div><a href="assingment/css/Case 5/index.html"><img src="assets/images/icons8-click-100.png"></a></div>
+               <img src="assets//images/case5.png" alt="an image" width="150" usemap="#myMap"></a>
             </div>
             <div>
-               <img src="assets//images/6.jpg" alt="an image" width="150" usemap="#myMap">
+               <div><a href="assingment/css/Case 6/index.html"><img src="assets/images/icons8-click-100.png"></a></div>
+               <img src="assets//images/case6.png" alt="an image" width="150" usemap="#myMap"></a>
             </div>
          </section>
       </section>
@@ -868,11 +1504,11 @@
       <!--six section start-->
       <section id="Expertise">
          <div>
-            <h1>Expertise</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">Expertise</h1>
          </div>
          <section>
             <div>
-               <div>
+               <div >
                   <img src="assets//images/ex1.png" alt="an image" width="150" usemap="#myMap">
                   <h4>Application</h4>
                   <article>
@@ -896,7 +1532,6 @@
                      </p>
                   </article>
                </div>
-
             </div>
             <div>
                <div>
@@ -918,7 +1553,7 @@
       <!--seven section start-->
       <section id="gallery">
          <div>
-            <h1>Photo</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">Photo</h1>
          </div>
          <section>
             <div>
@@ -934,10 +1569,9 @@
       </section>
       <!--six section done-->
       <!--Eight section start-->
-
       <section id="Contact">
          <div>
-            <h1>Contact</h1>
+            <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">Contact</h1>
          </div>
          <section>
             <section>
@@ -947,8 +1581,10 @@
                <h3>do you have any queries?</h3>
                <br>
                <h1>Phone : 0770748419</h1>
-               <h1><p>email : kumarasiriran</p>
-               <p>dika0706@gmail.com</p></h1>
+               <h1>
+                  <p>email : kumarasiriran</p>
+                  <p>dika0706@gmail.com</p>
+               </h1>
                <h1>Find with me</h1>
                <div>
                   <img src="assets//images/icons8-facebook-240 (1).png" alt="an image" width="40" usemap="#myMap">
