@@ -73,7 +73,14 @@
             display: inline-block;
         }
 
-        main>section:first-child>img{
+        main>section:first-child>div:nth-child(2)>img{
+            transform: rotate(0);
+            animation-name: wheel;
+            animation-duration: 14s;
+            animation-iteration-count: infinite;
+        }
+
+        main>section:first-child>div:last-child>img{
             transform: rotate(0);
             animation-name: wheel;
             animation-duration: 14s;
