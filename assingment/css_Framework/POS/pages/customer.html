@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap Customer Manager Form</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+</head>
+<body>
+
+<!--Nav Bar-->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="customer.html">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="item.html">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="place_order.html">PlaceOrder</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="order_details.html">OrderDetails</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div class="container-fluid mt-2">
+    <div class="row border bg-r">
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            <!--Form--> <!--Slider-->
+            <div>
+                <div class="modal-footer">
+                    <nav class="navbar bg-body-tertiary " style="width: 250px;">
+                        <div class="container-fluid " >
+                            <form class="d-flex " role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success " fdprocessedid="prr3r4" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </div>
+                <div class="mb-3">
+                    <label for="txtID" class="form-label">Customer ID</label>
+                    <input type="text" class="form-control" id="txtID" placeholder="Customer ID">
+                </div>
+                <div class="mb-3">
+                    <label for="txtName" class="form-label">Customer Name</label>
+                    <input type="text" class="form-control" id="txtName" placeholder="Customer Name">
+                </div>
+                <div class="mb-3">
+                    <label for="txtAddress" class="form-label">Customer Address</label>
+                    <input type="text" class="form-control" id="txtAddress" placeholder="Customer Address">
+                </div>
+                <div class="mb-3">
+                    <label for="txtTP" class="form-label">Customer Salary</label>
+                    <input type="text" class="form-control" id="txtTP" placeholder="Customer Salary">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" >Save</button>
+                    <button type="button" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-warning">Update</button>
+                  </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Table-->
+<div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+    <table class="table table-bordered table-hover table-striped-columns ">
+        <thead >
+        <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            <th class="bg-primary-subtle">ID</th>
+            <th class="bg-primary-subtle">Name</th>
+            <th class="bg-primary-subtle">Address</th>
+            <th class="bg-primary-subtle">TP</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <th>C001</th>
+            <td>amala</td>
+            <td>Galle</td>
+            <td>1199</td>
+        </tr>
+        <tr>
+            <th>C002</th>
+            <td>kamala</td>
+            <td>Mathara</td>
+            <td>1122</td>
+        </tr>
+        <tr>
+            <th>C003</th>
+            <td>nimala</td>
+            <td>Mathara</td>
+            <td>1122</td>
+        </tr>
+        <tr>
+            <th>C004</th>
+            <td>amala</td>
+            <td>Mathara</td>
+            <td>1122</td>
+        </tr>
+        <tr>
+            <th>C005</th>
+            <td>nimal</td>
+            <td>Mathara</td>
+            <td>1122</td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="../assets/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
