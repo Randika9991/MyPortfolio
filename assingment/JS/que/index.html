@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Que</title>
+  <style>
+    body>section{
+
+      position : absolute;
+      right : 0;
+      left: 0;
+      top :0px;
+      bottom:0;
+      width : 1220px;
+      height : 300px;
+      margin : auto;
+
+
+    }
+    body>section>section:nth-child(1)>div{
+      position : relative;
+      left :0px
+
+    }
+    body>section>section:nth-child(3)>div{
+      position : relative;
+      right :0px
+
+    }
+    div{
+      width : 200px;
+      height : 100px;
+      border : 2px solid black;
+      background : red;
+    }
+    body>section>section:nth-child(1){
+      display :flex;
+      align-items: start;
+      justify-content: start;
+    }
+    body>section>section:nth-child(2){
+      display : flex;
+      align-items: center;
+      justify-content: center;
+    }
+    body>section>section:nth-child(3){
+      display : flex;
+      align-items: end;
+      justify-content: end;
+    }
+  </style>
+</head>
+<body>
+<section>
+
+  <section>
+    <div id="1"></div>
+  </section>
+  <section>
+    <div  id="2"></div>
+    <div id="3"></div>
+    <div id="4"></div>
+    <div id="5"></div>
+  </section>
+  <section>
+    <div id="6"></div>
+  </section>
+</section>
+
+
+<script>
+  var colors = ["red", "yellow", "green", "blue", "deeppink", "orange"];
+  var divs =document.querySelectorAll('div');
+
+
+  // var box = [div1,div2,div3,div4,div5,div6];
+
+
+    setInterval(function(){
+      for(let i = 0; i < divs.length; i++) {
+        //should start increment
+        console.log(divs[i]);
+        divs[i].style.background = colors[i];
+      }
+      let s =colors.pop();
+      colors.unshift(s);
+
+  },200);
+
+</script>
+
+</body>
+</html>
