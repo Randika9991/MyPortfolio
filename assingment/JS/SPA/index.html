@@ -15,7 +15,6 @@
 </head>
 
 <body>
- 
   <!-- section one -->
   <section id="home" >
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -140,22 +139,22 @@
             </div>
             <div class="mb-3">
               <label for="txtID" class="form-label">Customer ID</label>
-              <input type="text" class="form-control" id="txtID" placeholder="Customer ID">
+              <input type="text" class="form-control" id="CustomertxtID" placeholder="Customer ID">
             </div>
             <div class="mb-3">
               <label for="txtName" class="form-label">Customer Name</label>
-              <input type="text" class="form-control" id="txtName" placeholder="Customer Name">
+              <input type="text" class="form-control" id="CustomertxtName" placeholder="Customer Name">
             </div>
             <div class="mb-3">
               <label for="txtAddress" class="form-label">Customer Address</label>
-              <input type="text" class="form-control" id="txtAddress" placeholder="Customer Address">
+              <input type="text" class="form-control" id="CustomertxtAddress" placeholder="Customer Address">
             </div>
             <div class="mb-3">
               <label for="txtTP" class="form-label">Customer Salary</label>
-              <input type="text" class="form-control" id="txtTP" placeholder="Customer Salary">
+              <input type="text" class="form-control" id="CustomertxtSalary" placeholder="Customer Salary">
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-success">Save</button>
+              <button id="custButtonSave" type="button" class="btn btn-success">Save</button>
               <button type="button" class="btn btn-danger">Delete</button>
               <button type="button" class="btn btn-warning">Update</button>
             </div>
@@ -168,46 +167,17 @@
 
     <!--Table-->
     <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
-      <table class="table table-bordered table-hover table-striped-columns ">
+      <table id="tblCustomer" class="table table-bordered table-hover table-striped-columns ">
         <thead>
           <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
             <th class="bg-primary-subtle">ID</th>
             <th class="bg-primary-subtle">Name</th>
             <th class="bg-primary-subtle">Address</th>
-            <th class="bg-primary-subtle">TP</th>
+            <th class="bg-primary-subtle">Salary</th>
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th>C001</th>
-            <td>amala</td>
-            <td>Galle</td>
-            <td>1199</td>
-          </tr>
-          <tr>
-            <th>C002</th>
-            <td>kamala</td>
-            <td>Mathara</td>
-            <td>1122</td>
-          </tr>
-          <tr>
-            <th>C003</th>
-            <td>nimala</td>
-            <td>Mathara</td>
-            <td>1122</td>
-          </tr>
-          <tr>
-            <th>C004</th>
-            <td>amala</td>
-            <td>Mathara</td>
-            <td>1122</td>
-          </tr>
-          <tr>
-            <th>C005</th>
-            <td>nimal</td>
-            <td>Mathara</td>
-            <td>1122</td>
-          </tr>
+
         </tbody>
       </table>
     </div>
@@ -539,12 +509,13 @@
         </div>
       </div>
     </nav>
-
-    
   </section>
+
+
 
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
   <script>
+
     //homeform
     document.querySelector("#navbarSupportedContent>ul>li:nth-child(2)>a").addEventListener(
       "click", function () {
@@ -707,13 +678,56 @@
         sessionStorage.setItem("selectedSection", "place_oder");
       }
     );
-
-
-   
-
-
   </script>
+<script>
+  let custId = document.querySelector("#CustomertxtID");
+  let custName = document.querySelector("#CustomertxtName");
+  let custAddress = document.querySelector("#CustomertxtAddress");
+  let custSalary = document.querySelector("#CustomertxtSalary");
+
+  var customDetail=[];
+  let btnSave = document.querySelector("#custButtonSave");
+  let tblCustomer = document.querySelector("#tblCustomer");
+  btnSave.addEventListener("click",function(){
+
+    customDetail[0]=custId.value;
+    customDetail[1]=custName.value;
+    customDetail[2]=custAddress.value;
+    customDetail[3]=custSalary.value;
+    alert("success");
+
+    var customer ={
+      id:custId.value,
+      name:custName.value,
+      address:custAddress.value,
+      salary:custSalary.value,
+    }
+    customDetail.push(customer);
+    console.log(customDetail);
+
+    let tr = document.createElement("tr");
+    let tdid = document.createElement("td");
+    tdid.textContent = customer.id;
+    tr.appendChild(tdid);
+
+    let tdName = document.createElement("td");
+    tdName.textContent = customer.name;
+    tr.appendChild(tdName);
+
+    let tdAddress = document.createElement("td");
+    tdAddress.textContent = customer.address;
+    tr.appendChild(tdAddress);
+
+    let tdSalary = document.createElement("td");
+    tdSalary.textContent = customer.salary;
+    tr.appendChild(tdSalary);
+
+    tblCustomer.appendChild(tr);
+
+
+  });
+
+</script>
 
 </body>
-
 </html>
