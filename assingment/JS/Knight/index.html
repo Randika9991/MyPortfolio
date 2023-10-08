@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>JS Que</title>
+  <style>
+    body>section {
+      position: absolute;
+      right: 0;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      margin: auto;
+      background-color: black;
+    }
+    div {
+      width: 1000px;
+      height: 60px;
+      border: 2px solid black;
+      background: #ffffff;
+    }
+
+    body>section>section {
+      position: absolute;
+      right: 9%;
+      left: 9%;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    #playBtn {
+      z-index: 1;
+      position: absolute;
+      top: 61%;
+      left: 33%;
+    }
+
+    #stopBtn {
+      z-index: 1;
+      position: absolute;
+      top: 61%;
+      left: 39%;
+    }
+    #myAudio{
+      display: none;
+    }
+
+    #knighttext {
+      color: white;
+      z-index: 1;
+      position: absolute;
+      font-size: 190%;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    #intervalRange {
+      position: absolute;
+      left: 48%;
+      top: 61%;
+      transform: rotate(180deg);
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <section>
+    <h1 id="knighttext">Knight Rider</h1>
+    <section>
+      <div class="lights"></div>
+      <div class="lights"></div>
+      <div class="lights"></div>
+      <div class="lights"></div>
+      <div class="lights"></div>
+      <div class="lights"></div>
+      <div class="lights"></div>
+    </section>
+    <audio id="myAudio" controls>
+      <source src="assets/audio/WhatsApp Audio 2023-10-04 at 20.38.22_3b1a0d9a.mp3" type="audio/mp3">
+    </audio>
+    <button id="playBtn" onclick="playAudio()">Play</button>
+    <button id="stopBtn" onclick="stopAudio()">Stop</button>
+    <input id="intervalRange"  type="range" value="50">
+  </section>
+
+  <script src="assets/js/bootstrap.js"></script>
+  <script>
+
+    let lights = document.querySelectorAll('.lights');
+    let direction = 1;
+    let currentIndex = 0;
+    let colors = ['red', 'red', 'red', 'red', 'red', 'red', 'red'];
+    let intervalRange = document.getElementById('intervalRange');
+    let intervalTime = 1000;
+
+    function performAction() {
+      for (let i = 0; i < lights.length; i++) {
+        lights[i].style.background = 'white';
+
+      }
+      lights[currentIndex].style.background = colors[currentIndex];
+      currentIndex += direction;
+      if (currentIndex === lights.length - 1 || currentIndex === 0) {
+        direction *= -1;
+      }
+    }
+
+    let intervalID = setInterval(performAction, intervalTime);
+
+    intervalRange.addEventListener('input', function () {
+      intervalTime = parseInt(intervalRange.value);
+      clearInterval(intervalID);
+      intervalID = setInterval(performAction, intervalTime);
+    });
+
+    const audio = document.getElementById('myAudio');
+
+    function playAudio() {
+      audio.play();
+      performAction()
+    }
+
+    function stopAudio() {
+      audio.pause();
+      audio.currentTime = 0;
+    }
+
+  </script>
+
+</body>
+</html>

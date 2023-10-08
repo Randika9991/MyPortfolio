@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Bootstrap Customer Manager Form</title>
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+  <link href="assets/bootstrap/css/b" rel="stylesheet">
+
+  <link href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/fontawesome-free-6.4.2-web/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- section one -->
+  <section id="home" >
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PlaceOrder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OrderDetails</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/bac/10064201_48441.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/bac/10988593_4624578.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/bac/12364585_3l75_skvm_201102.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- section two -->
+  <section id="customer" style="display: none;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PlaceOrder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OrderDetails</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-2">
+      <div class="row border bg-r">
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+          <!--Form--> <!--Slider-->
+          <div>
+            <div class="modal-footer">
+              <nav class="navbar bg-body-tertiary " style="width: 250px;">
+                <div class="container-fluid ">
+                  <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success " fdprocessedid="prr3r4" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+            <div class="mb-3">
+              <label for="txtID" class="form-label">Customer ID</label>
+              <input type="text" class="form-control" id="CustomertxtID" placeholder="Customer ID">
+            </div>
+            <div class="mb-3">
+              <label for="txtName" class="form-label">Customer Name</label>
+              <input type="text" class="form-control" id="CustomertxtName" placeholder="Customer Name">
+            </div>
+            <div class="mb-3">
+              <label for="txtAddress" class="form-label">Customer Address</label>
+              <input type="text" class="form-control" id="CustomertxtAddress" placeholder="Customer Address">
+            </div>
+            <div class="mb-3">
+              <label for="txtTP" class="form-label">Customer Salary</label>
+              <input type="text" class="form-control" id="CustomertxtSalary" placeholder="Customer Salary">
+            </div>
+            <div class="modal-footer">
+              <button id="custButtonSave" type="button" class="btn btn-success">Save</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+              <button type="button" class="btn btn-warning">Update</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Table-->
+    <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+      <table id="tblCustomer" class="table table-bordered table-hover table-striped-columns ">
+        <thead>
+          <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            <th class="bg-primary-subtle">ID</th>
+            <th class="bg-primary-subtle">Name</th>
+            <th class="bg-primary-subtle">Address</th>
+            <th class="bg-primary-subtle">Salary</th>
+          </tr>
+        </thead>
+        <tbody id="CustTbody">
+
+        </tbody>
+      </table>
+    </div>
+
+
+  </section>
+
+  <!-- section tree -->
+  <section id="item" style="display: none;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent2">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PlaceOrder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OrderDetails</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+    <div class="container-fluid mt-2">
+      <div class="row border bg-r">
+        <div class="p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+          <!--Form--> <!--Slider-->
+          <div>
+            <div class="modal-footer">
+              <nav class="navbar bg-body-tertiary " style="width: 250px;">
+                <div class="container-fluid ">
+                  <form class="d-flex " role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success " fdprocessedid="prr3r4" type="submit">Search</button>
+                  </form>
+                </div>
+              </nav>
+            </div>
+            <div class="mb-3">
+              <label for="txtID" class="form-label">Item Code</label>
+              <input type="text" class="form-control" id="txtID" placeholder="Item Code">
+            </div>
+            <div class="mb-3">
+              <label for="txtName" class="form-label">Item Name</label>
+              <input type="text" class="form-control" id="txtName" placeholder="Item Name">
+            </div>
+            <div class="mb-3">
+              <label for="txtAddress" class="form-label">Price</label>
+              <input type="text" class="form-control" id="txtAddress" placeholder="Price">
+            </div>
+            <div class="mb-3">
+              <label for="txtTP" class="form-label">Quantity</label>
+              <input type="text" class="form-control" id="txtTP" placeholder="Quantity">
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success">Save</button>
+              <button type="button" class="btn btn-danger">Delete</button>
+              <button type="button" class="btn btn-warning">Update</button>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Table-->
+    <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+      <table class="table table-bordered table-hover table-striped-columns ">
+        <thead>
+          <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            <th class="bg-primary-subtle">Item Code</th>
+            <th class="bg-primary-subtle">Item Name</th>
+            <th class="bg-primary-subtle">Price</th>
+            <th class="bg-primary-subtle">Quantity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>P001</th>
+            <td>suger</td>
+            <td>233</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>P002</th>
+            <td>salt</td>
+            <td>400</td>
+            <td>5</td>
+          </tr>
+          <tr>
+            <th>P003</th>
+            <td>papadam</td>
+            <td>100</td>
+            <td>4</td>
+          </tr>
+          <tr>
+            <th>P004</th>
+            <td>keerisamba</td>
+            <td>400</td>
+            <td>8</td>
+          </tr>
+          <tr>
+            <th>P005</th>
+            <td>suger</td>
+            <td>120</td>
+            <td>9</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+  </section>
+
+  <!-- section four -->
+  <section id="place_oder" style="display: none;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent3">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PlaceOrder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OrderDetails</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid mt-2">
+      <div class="row border">
+        <div
+          class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3"
+          style="border-radius: 10px; border: 2px solid #0BB256">
+          <h4 style="text-align: center; color: #0BB256;">Invoice Details</h4>
+          <div class="row g-2">
+            <div class="col-6">
+
+              <label for="oId" class="form-label">Order Id :</label>
+              <input type="text" id="oId" class="form-control" placeholder="Order Id" aria-label="Last name">
+
+            </div>
+            <div class="col-6">
+              <label for="date" class="form-label">Order Date :</label>
+              <input type="date" id="date" class="form-control" placeholder="Order Date" aria-label="Order Date">
+            </div>
+            <div class="col-6">
+              <label for="inputState" class="form-label">Customer :</label>
+              <select id="inputState" class="form-select">
+                <option>C001</option>
+                <option>C002</option>
+                <option>C003</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="id" class="form-label">Customer Id :</label>
+              <input type="text" id="id" class="form-control" placeholder="Customer Id" aria-label="Last name">
+            </div>
+            <div class="col-6">
+              <label for="name" class="form-label">Customer Name :</label>
+              <input type="text" id="name" class="form-control" placeholder="Customer Name" aria-label="Last name">
+            </div>
+            <div class="col-6">
+              <label for="salary" class="form-label">Customer Salary :</label>
+              <input type="text" id="salary" class="form-control" placeholder="Salary" aria-label="Last name">
+            </div>
+            <div class="col-6">
+              <label for="address" class="form-label">Customer Address :</label>
+              <input type="text" id="address" class="form-control" placeholder="Address" aria-label="Last name">
+            </div>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3"
+          style="border-radius: 10px; border: 2px solid #0BB256">
+          <!--Form--> <!--Slider-->
+          <h4 style="text-align: center; color: #0BB256">Item Select</h4>
+          <div class="row g-2">
+            <div class="col-6">
+              <label for="inputState1" class="form-label">Order Id :</label>
+              <select id="inputState1" class="form-select">
+                <option>P001</option>
+                <option>P002</option>
+                <option>P003</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <label for="itemCode" class="form-label">Item Code :</label>
+              <input type="text" id="itemCode" class="form-control" placeholder="Item Code" aria-label="Last name">
+            </div>
+            <div class="col-4">
+              <label for="itemName" class="form-label">Item Name :</label>
+              <input type="text" id="itemName" class="form-control" placeholder="Item Name" aria-label="Last name">
+            </div>
+            <div class="col-4">
+              <label for="price" class="form-label">Price :</label>
+              <input type="text" id="price" class="form-control" placeholder="Price" aria-label="Last name">
+            </div>
+            <div class="col-4">
+              <label for="qtyH" class="form-label">QtyOnHand :</label>
+              <input type="text" id="qtyH" class="form-control" placeholder="QtyOnHand" aria-label="Last name">
+            </div>
+            <div class="col-12">
+              <label for="qty" class="form-label">OrderQty :</label>
+              <input type="text" id="qty" class="form-control" placeholder="OrderQty" aria-label="Last name">
+            </div>
+
+          </div>
+          <div class="d-flex justify-content-end">
+            <button type="button" class="btn btn-warning mt-3  ">AddToCart</button>
+          </div>
+        </div>
+        <div
+          class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3"
+          style="border-radius: 10px; border: 2px solid #0BB256">
+          <h2 style="color: blue">Total : RS <span>4000</span>/=</h2>
+          <h2 style=" color: red">SubTotal : <span>1000 RS</span>/=</h2>
+          <div class="row g-2">
+            <div class="col-6">
+              <label for="cash" class="form-label">Cash :</label>
+              <input type="text" id="cash" class="form-control" placeholder="Cash" aria-label="First name">
+            </div>
+            <div class="col-6">
+              <label for="discount" class="form-label">Discount :</label>
+              <input type="number" id="discount" class="form-control" placeholder="Discount" aria-label="Last name">
+            </div>
+            <div class="col-12">
+              <label for="Balance" class="form-label">Balance :</label>
+              <input type="text" id="Balance" class="form-control" placeholder="Balance" aria-label="Last name">
+            </div>
+            <div class="d-flex justify-content-center">
+              <button type="button" class="btn btn-success" style="width: 30%;">Purchase</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--Table-->
+    <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
+      <table class="table table-bordered table-hover table-striped-columns ">
+        <thead>
+          <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
+            <th class="bg-primary-subtle">Item Code</th>
+            <th class="bg-primary-subtle">Item Name</th>
+            <th class="bg-primary-subtle">Price</th>
+            <th class="bg-primary-subtle">Quantity</th>
+            <th class="bg-primary-subtle">Total</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>P001</th>
+            <td>suger</td>
+            <td>300.00</td>
+            <td>2</td>
+            <td>1000</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+  </section>
+
+  <!-- section five -->
+  <section id="order_deatail" style="display: none;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent4">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Customer</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Item</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PlaceOrder</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">OrderDetails</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+
+
+  <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+  <script>
+
+    //homeform
+    document.querySelector("#navbarSupportedContent>ul>li:nth-child(2)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#customer").style.display = "block";
+        document.querySelector("#home").style.display = "none";
+        sessionStorage.setItem("selectedSection", "customer");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent>ul>li:nth-child(3)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#item").style.display = "block";
+        document.querySelector("#home").style.display = "none";
+        sessionStorage.setItem("selectedSection", "item");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent>ul>li:nth-child(4)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#place_oder").style.display = "block";
+        document.querySelector("#home").style.display = "none";
+        sessionStorage.setItem("selectedSection", "place_oder");
+      }
+    );
+    document.querySelector("#navbarSupportedContent>ul>li:last-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#order_deatail").style.display = "block";
+        document.querySelector("#home").style.display = "none";
+        sessionStorage.setItem("selectedSection", "order_deatail");
+      }
+    );
+
+
+     //customerform
+     document.querySelector("#navbarSupportedContent1>ul>li:first-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#home").style.display = "block";
+        document.querySelector("#customer").style.display = "none";
+        sessionStorage.setItem("selectedSection", "home");
+      }
+    );
+     
+    document.querySelector("#navbarSupportedContent1>ul>li:nth-child(3)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#item").style.display = "block";
+        document.querySelector("#customer").style.display = "none";
+        sessionStorage.setItem("selectedSection", "item");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent1>ul>li:nth-child(4)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#place_oder").style.display = "block";
+        document.querySelector("#customer").style.display = "none";
+        sessionStorage.setItem("selectedSection", "place_oder");
+      }
+    );
+    document.querySelector("#navbarSupportedContent1>ul>li:last-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#order_deatail").style.display = "block";
+        document.querySelector("#customer").style.display = "none";
+        sessionStorage.setItem("selectedSection", "order_deatail");
+      }
+    );
+
+    //itemform
+    document.querySelector("#navbarSupportedContent2>ul>li:first-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#home").style.display = "block";
+        document.querySelector("#item").style.display = "none";
+        sessionStorage.setItem("selectedSection", "home");
+      }
+    );
+     
+    document.querySelector("#navbarSupportedContent2>ul>li:nth-child(2)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#customer").style.display = "block";
+        document.querySelector("#item").style.display = "none";
+        sessionStorage.setItem("selectedSection", "customer");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent2>ul>li:nth-child(4)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#place_oder").style.display = "block";
+        document.querySelector("#item").style.display = "none";
+        sessionStorage.setItem("selectedSection", "place_oder");
+      }
+    );
+    document.querySelector("#navbarSupportedContent2>ul>li:last-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#order_deatail").style.display = "block";
+        document.querySelector("#item").style.display = "none";
+        sessionStorage.setItem("selectedSection", "order_deatail");
+      }
+    );
+
+    //placeOrder
+    document.querySelector("#navbarSupportedContent3>ul>li:first-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#home").style.display = "block";
+        document.querySelector("#place_oder").style.display = "none";
+        sessionStorage.setItem("selectedSection", "home");
+      }
+    );
+     
+    document.querySelector("#navbarSupportedContent3>ul>li:nth-child(2)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#customer").style.display = "block";
+        document.querySelector("#place_oder").style.display = "none";
+        sessionStorage.setItem("selectedSection", "customer");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent3>ul>li:nth-child(3)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#item").style.display = "block";
+        document.querySelector("#place_oder").style.display = "none";
+        sessionStorage.setItem("selectedSection", "item");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent3>ul>li:last-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#order_deatail").style.display = "block";
+        document.querySelector("#place_oder").style.display = "none";
+        sessionStorage.setItem("selectedSection", "order_deatail");
+      }
+    );
+
+     //OrderDeatail
+     document.querySelector("#navbarSupportedContent4>ul>li:first-child>a").addEventListener(
+      "click", function () {
+        document.querySelector("#home").style.display = "block";
+        document.querySelector("#order_deatail").style.display = "none";
+        sessionStorage.setItem("selectedSection", "home");
+      }
+    );
+     
+    document.querySelector("#navbarSupportedContent4>ul>li:nth-child(2)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#customer").style.display = "block";
+        document.querySelector("#order_deatail").style.display = "none";
+        sessionStorage.setItem("selectedSection", "customer");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent4>ul>li:nth-child(3)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#item").style.display = "block";
+        document.querySelector("#order_deatail").style.display = "none";
+        sessionStorage.setItem("selectedSection", "item");
+      }
+    );
+
+    document.querySelector("#navbarSupportedContent4>ul>li:nth-child(4)>a").addEventListener(
+      "click", function () {
+        document.querySelector("#place_oder").style.display = "block";
+        document.querySelector("#order_deatail").style.display = "none";
+        sessionStorage.setItem("selectedSection", "place_oder");
+      }
+    );
+  </script>
+<script>
+  // let custId = document.querySelector("#CustomertxtID");
+  // let custName = document.querySelector("#CustomertxtName");
+  // let custAddress = document.querySelector("#CustomertxtAddress");
+  // let custSalary = document.querySelector("#CustomertxtSalary");
+  //
+  // var customDetail=[];
+  // let btnSave = document.querySelector("#custButtonSave");
+  // let tblCustomer = document.querySelector("#tblCustomer");
+  // btnSave.addEventListener("click",function(){
+  //
+  //   customDetail[0]=custId.value;
+  //   customDetail[1]=custName.value;
+  //   customDetail[2]=custAddress.value;
+  //   customDetail[3]=custSalary.value;
+  //   alert("success");
+  //
+  //   var customer ={
+  //     id:custId.value,
+  //     name:custName.value,
+  //     address:custAddress.value,
+  //     salary:custSalary.value,
+  //   }
+  //   customDetail.push(customer);
+  //   console.log(customDetail);
+  //
+  //   let tr = document.createElement("tr");
+  //   let tdid = document.createElement("td");
+  //   tdid.textContent = customer.id;
+  //   tr.appendChild(tdid);
+  //
+  //   let tdName = document.createElement("td");
+  //   tdName.textContent = customer.name;
+  //   tr.appendChild(tdName);
+  //
+  //   let tdAddress = document.createElement("td");
+  //   tdAddress.textContent = customer.address;
+  //   tr.appendChild(tdAddress);
+  //
+  //   let tdSalary = document.createElement("td");
+  //   tdSalary.textContent = customer.salary;
+  //   tr.appendChild(tdSalary);
+  //
+  //   tblCustomer.appendChild(tr);
+  // });
+
+</script>
+
+  <script src="assets/js/code.jquery.com_jquery-3.7.1.min.js"> </script>
+
+  <script src="assets/js/jquery-3.7.1.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+
+    var detail = [];
+
+    $("#custButtonSave").click(function (event){
+      // alert("hello");
+      txtID = $('#CustomertxtID').val();
+      txtName = $("#CustomertxtName").val();
+      txtAddress = $("#CustomertxtAddress").val();
+      txtSalary = $("#CustomertxtSalary").val();
+
+      var customer = {
+        id: txtID,
+        name: txtName,
+        address: txtAddress,
+        salary: txtSalary
+      }
+
+      let tbody = $("#CustTbody");
+      tbody.append(
+              `<tr>
+                    <th scope="row">${customer.id}</th>
+                    <td>${customer.name}</td>
+                    <td>${customer.address}</td>
+                    <td>${customer.salary}</td>
+                </tr> `)
+      detail.push(customer);
+      console.log(detail);
+      event.preventDefault();
+    });
+
+    $("#getAll").click(function (event){
+      // alert("hello");
+
+      let tbody = $("#cusTBody");
+      tbody.empty();
+
+      for (let i=0; i<detail.length; i++){
+        tbody.append(
+                `<tr>
+                    <th scope="row">${detail[i].id}</th>
+                    <td>${detail[i].name}</td>
+                    <td>${detail[i].address}</td>
+                    <td>${detail[i].salary}</td>
+                </tr> `)
+      }
+
+      event.preventDefault();
+
+    })
+
+    $(document).on('click', '#CustTbody > tr', function() {
+      let id = $(this).children(':nth-child(1)').text();
+      let name = $(this).children(':nth-child(2)').text();
+      let address = $(this).children(':nth-child(3)').text();
+      let salary = $(this).children(':nth-child(4)').text();
+
+      setTextFieldValues(id,name,address,salary);
+    });
+
+    function setTextFieldValues(id, name, address, salary) {
+      $("#CustomertxtID").val(id);
+      $("#CustomertxtName").val(name);
+      $("#CustomertxtAddress").val(address);
+      $("#CustomertxtSalary").val(salary);
+    }
+
+  </script>
+</body>
+</html>

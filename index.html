@@ -1210,6 +1210,18 @@
          background-color: #24282C;
       }
 
+      /*---------------------------------------------section:nine  create---------------------------------------------*/
+
+
+      #loader {
+
+         height: 100vh;
+         width: 100vh;
+
+         background-color: #004d9c;
+         z-index: 100;
+      }
+
       /*----------------------------------------------footer---------------------------------------------*/
       body>footer {
          height: 193px;
@@ -4276,6 +4288,7 @@
    <main>
       <!-- first section start-->
       <section id="home">
+
          <div>
             <h1 class="animate__animated animate__bounce animate__infinite	animate__pulse">Home</h1>
          </div>
@@ -4689,6 +4702,23 @@
          Copyright © 2023 - Dulaksha Randika All Rights Reserved.
       </small>
    </footer>
+
+
+   <script src="assets/js/jquery-3.7.1.min.js"></script>
+   <script>
+      //load
+      //DOMContentLoaded
+      //window->on->load
+      //document->ready
+
+      //this will execute after window is fully loaded
+      $(window).on('load',function (){
+         // $("#loader").css('display','none');
+         $("#loader").fadeOut(1000);
+         console.log("Window is fully loaded");
+      });
+
+   </script>
 </body>
 
 </html>
