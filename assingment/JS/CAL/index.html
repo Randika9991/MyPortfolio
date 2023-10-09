@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/normalize.css">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <title>Animations cse 2</title>
+    <style>
+        body {
+            background-color: #2C3A47;
+        }
+
+        section {
+            position: absolute;
+            width: 31vw;
+            height: 91vh;
+            border: 18px solid #795548;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 4px;
+            margin: auto;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            background-color: darkslategray;
+        }
+
+        section>div {
+            border: 4px solid black;
+        }
+        section>div>h1 {
+            position: relative;
+            text-align: center;
+        }
+        section>div>button {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        section>div:nth-child(2){
+            background-size: cover;
+            grid-column: 2/5;
+        }
+        section>div:nth-child(2)>input {
+            position: relative;
+            width: 97%;
+            height: 94%;
+            background-color: white;
+            text-align: right;
+            font-size: 28px;
+        }
+
+    </style>
+</head>
+<body>
+
+<section>
+    <div><button id="C" class="btn btn-success" onclick="clearValue()"><h1>C</h1></button></div>             <!-- block level ilement ekak thamay div eka -->
+    <div><input type="text" class="form-control display" id="displayNumber" style="" ></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('7')"><h1>7</h1></button></div>             <!-- block level ilement ekak thamay div eka -->
+    <div><button class="btn btn-dark" onclick="NumberValue('8')"><h1>8</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('9')"><h1>9</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('+')"><h1>+</h1></button></div>             <!-- block level ilement ekak thamay div eka -->
+    <div><button class="btn btn-dark" onclick="NumberValue('4')"><h1>4</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('5')"><h1>5</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('6')"><h1>6</h1></button></div>             <!-- block level ilement ekak thamay div eka -->
+    <div><button class="btn btn-dark" onclick="NumberValue('-')"><h1>-</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('1')"><h1>1</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('2')"><h1>2</h1></button></div>             <!-- block level ilement ekak thamay div eka -->
+    <div><button class="btn btn-dark" onclick="NumberValue('3')"><h1>3</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('/')"><h1>/</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('0')"><h1>0</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('.')"><h1>.</h1></button></div>             <!-- block level ilement ekak thamay div eka -->
+    <div><button class="btn btn-dark" onclick="calculate()"><h1>=</h1></button></div>
+    <div><button class="btn btn-dark" onclick="NumberValue('*')"><h1>*</h1></button></div>
+</section>
+
+<script src="assets/bootstrap/js/bootstrap.js"></script>
+
+<script>
+
+    const displayNumber = document.getElementById('displayNumber');
+    let curentValue = '';
+
+    function clearValue() {
+        curentValue = '';
+        displayNumber.value = '';
+    }
+
+    function NumberValue(char) {
+        curentValue += char;
+        displayNumber.value = curentValue;
+    }
+
+    function calculate() {
+        try {
+            const result = eval(curentValue);
+            displayNumber.value = result;
+            curentValue = result.toString();
+        } catch (error) {
+            displayNumber.value = 'Error';
+        }
+    }
+
+</script>
+
+</body>
+
+</html>
