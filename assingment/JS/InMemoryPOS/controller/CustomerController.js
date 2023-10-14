@@ -125,6 +125,7 @@ function getAllCustomers() {
         $("#CustomerTbl").append(row);
         bindTrEvents();
     }
+
 }
 
 //click table .shire value textField
