@@ -27,6 +27,15 @@ getAllCustomer();
     });
 
 // item side
+getAllCustomercheck();
+function getAllCustomercheck() {
+    customerDB.forEach(function (customer) {
+        console.log(customer.id);
+        console.log(customer.name);
+        console.log(customer.salary);
+        console.log(customer.address);
+    });
+}
 
     let selectItemElement = document.getElementById("IteminputState");
     let itemCode;
@@ -62,7 +71,6 @@ getAllCustomer();
         }
     });
 
-let NotablesetRound=0;
 function getAllItemTOOrder() {
     let newItemtoOrder = Object.assign({}, itemToOrder);
     let totalItemPrice = itemPricetoOrder * ChoiceElementOrder.value;
@@ -78,8 +86,6 @@ function getAllItemTOOrder() {
         newItemtoOrder.itemQTYChoice = ChoiceElementOrder.value;
         newItemtoOrder.totalPrice = totalItemPrice;
         defaultArrayToSecondItem.push(newItemtoOrder);
-        NotablesetRound++;
-        // alert(NotablesetRound);
     }
     getAllItemSetTableArray();
 }
@@ -116,13 +122,6 @@ function calculateTotalPrice() {
     totalPriceSum2=totalPriceSum;
 }
 
-let inputCash = document.getElementById("inputCash");
-let cashLOwMasse = document.getElementById("cashShow");
-
-inputCash.addEventListener("keyup", function () {
-    inputCashCheck();
-});
-
 // discount
 let discount = document.getElementById("discount");
 discount.addEventListener("keyup", function (){
@@ -134,9 +133,31 @@ discount.addEventListener("keyup", function (){
     $("#BalanceInput").val(balance);
 });
 
-// arry set value
-const secondRoundArry = [];
-function setOrderValue(orderIDstor) {
+function ItemQTYLower(orderIDstor) {
+    for (let i = 0; i < defaultArrayToSecondItem.length; i++) {
+        let defaultArrayItemCode = defaultArrayToSecondItem[i].itemCode;
+        let defaultArrayItemQTY = defaultArrayToSecondItem[i].itemQTYChoice;
+
+        for (let k = 0; k < itemDB.length; k++) {
+            let ItemCode = itemDB[k].code;
+            if (defaultArrayItemCode === ItemCode) {
+                let itemQtyOnHand = itemDB[k].qtyOnHand;
+                let lowQTYUpdate = itemQtyOnHand - defaultArrayItemQTY;
+
+                itemDB[k].qtyOnHand = lowQTYUpdate;
+
+                // console.log("Code: " + itemDB[k].code);
+                // console.log("Description: " + itemDB[k].description);
+                // console.log("Qty on Hand: " + lowQTYUpdate);
+                // console.log("Unit Price: " + itemDB[k].unitPrice);
+                // console.log("\n");
+            }
+        }
+    }
+    setOrderValue(orderIDstor);
+}
+
+    function setOrderValue(orderIDstor) {
     // orderDB.length=0;
     // orderDB.orderDetails=0
     let orderId = orderIDstor;
@@ -157,14 +178,6 @@ function setOrderValue(orderIDstor) {
         let QTY = defaultArrayToSecondItem[i].itemQTYChoice;
         let total = defaultArrayToSecondItem[i].totalPrice;
 
-        let newItemtoOrder = Object.assign({}, itemToOrder);
-        newItemtoOrder.itemCode = id;
-        newItemtoOrder.itemName = name;
-        newItemtoOrder.itemPrice = price;
-        newItemtoOrder.itemQTYChoice =QTY;
-        newItemtoOrder.totalPrice = total;
-        secondRoundArry.push(newItemtoOrder);
-
         order.orderDetails.push({
                 oid: orderId,
                 code: id,
@@ -175,10 +188,7 @@ function setOrderValue(orderIDstor) {
     }
 
     orderDB.push(order);
-
     defaultArrayToSecondItem.length=0;
-
-
     // orderDB.forEach(function (order) {
     //     console.log("Order ID: " + order.oid);
     //     console.log("Date: " + order.date);
@@ -195,50 +205,88 @@ function setOrderValue(orderIDstor) {
     // for (let i = 0; i < secondRoundArry.length; i++) {
     //     console.log(secondRoundArry[i]);
     // }
-
     allemtyset();
 }
 
-const totalArry = [];
-let ChoiceElement6 = document.getElementById("OrderId");
-ChoiceElement6.addEventListener("keyup", function () {
+    //get order details
+
+    // const totalArry = [];
+    let ChoiceElement6 = document.getElementById("OrderId");
+    ChoiceElement6.addEventListener("keyup", function () {
     let inputOrd = ChoiceElement6.value;
     $("#TBodyOrder").empty();
+        for (let i = 0; i < orderDB.length; i++) {
+            let order = orderDB[i];
+            if (order.oid === inputOrd) {
+                let orderDetails = order.orderDetails;
+                let totalOrderPrice = 0;
 
-    for (let i = 0; i < orderDB.length; i++) {
-        let order = orderDB[i];
-        if (order.oid === inputOrd) {
-            let orderDetails = order.orderDetails;
-            let totalOrderPrice = 0;
+                for (let j = 0; j < orderDetails.length; j++) {
+                    let code = orderDetails[j].code;
+                    let QTY = orderDetails[j].qty;
+                    let unitPrice = orderDetails[j].unitPrice;
 
-            for (let j = 0; j < orderDetails.length; j++) {
-                let code = orderDetails[j].code;
-                let QTY = orderDetails[j].qty;
-                let unitPrice = orderDetails[j].unitPrice;
-
-                for (let k = 0; k < itemDB.length; k++) {
+                    for (let k = 0; k < itemDB.length; k++) {
                     let realItemid = itemDB[k].code;
 
-                    if (realItemid === code) {
-                        let realItemname = itemDB[k].description;
-                        let realItemPrice = itemDB[k].unitPrice;
-                        let row = `<tr>
-                            <td>${code}</td>
-                            <td>${realItemname}</td>
-                            <td>${realItemPrice}</td>
-                            <td>${QTY}</td>
-                            <td>${unitPrice}</td>
-                        </tr>`;
-                        $("#TBodyOrder").append(row);
-
-                        totalOrderPrice += unitPrice;
+                        if (realItemid === code) {
+                            let realItemname = itemDB[k].description;
+                            let realItemPrice = itemDB[k].unitPrice;
+                            let row = `<tr>
+                                <td>${code}</td>
+                                <td>${realItemname}</td>
+                                <td>${realItemPrice}</td>
+                                <td>${QTY}</td>
+                                <td>${unitPrice}</td>
+                            </tr>`;
+                            $("#TBodyOrder").append(row);
+                            totalOrderPrice += unitPrice;
+                        }
                     }
                 }
+                $("#lableTotPrice").text(totalOrderPrice);
+                $("#lableSubTotal").text(totalOrderPrice);
             }
+        }
+    });
 
-            $("#lableTotPrice").text(totalOrderPrice);
-            $("#lableSubTotal").text(totalOrderPrice);
+//    delete table value
+$(document).ready(function () {
+    $('#clickTable').on('click', 'tr', function () {
+        var userConfirmed = confirm("Do you want to Remove ?");
+
+        if (userConfirmed) {
+            alert("Success");
+            let Itemcode = $(this).children().eq(0).text();
+
+            for (let i = 0; i < defaultArrayToSecondItem.length; i++) {
+                if (defaultArrayToSecondItem[i].itemCode == Itemcode) {
+                    defaultArrayToSecondItem.splice(i, 1);
+                    $("#lableTotPrice").text("0");
+                    $("#lableSubTotal").text("0");
+                    getAllItemSetTableArray();
+                }
+            }
+        } else {
 
         }
-    }
+
+    });
 });
+
+
+    // $('#clickTable>tr').click(function () {
+    //     alert("fdgr")
+    //     // $("#CustomertxtID,#CustomertxtName,#CustomertxtAddress,#CustomertxtSalary").css("border", "2px solid blue");
+    //     // let id = $(this).children().eq(0).text();
+    //     // let name = $(this).children().eq(1).text();
+    //     // let address = $(this).children().eq(2).text();
+    //     // let salary = $(this).children().eq(3).text();
+    //     //
+    //     // $("#CustomertxtID").val(id);
+    //     // $("#CustomertxtName").val(name);
+    //     // $("#CustomertxtAddress").val(address);
+    //     // $("#CustomertxtSalary").val(salary);
+    //
+    //
+    // })

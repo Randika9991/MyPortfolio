@@ -8,6 +8,23 @@ function generateOrderID() {
     $("#OrderId").val(orderID);
 }
 
+let typeOrdIdOrderPlace = document.getElementById("OrderId");
+let OrderNotTypeId = document.getElementById("OrderNotTypeId");
+typeOrdIdOrderPlace.addEventListener("keyup", function () {
+    if ($("#OrderId").val() === orderIDstor) {
+        $("#OrderNotTypeId").css({
+            display: "none",
+        });
+        $("#lableTotPrice").text("0");
+        $("#lableSubTotal").text("0");
+    } else {
+        $("#OrderNotTypeId").css({
+            display: "block",
+        });
+        OrderNotTypeId.textContent="Next Order Id : "+orderIDstor;
+    }
+});
+
 //item section
 let ChoiceElement = document.getElementById("ChoiceQTYOrder");
 let labelElement = document.getElementById("h1hello");
@@ -171,6 +188,13 @@ $("#addToCardOrder").click(function () {
         checkValidation();
 });
 
+let inputCash = document.getElementById("inputCash");
+let cashLOwMasse = document.getElementById("cashShow");
+
+inputCash.addEventListener("keyup", function () {
+    inputCashCheck();
+});
+
 function inputCashCheck() {
     let value = inputCash.value;
     let balance = inputCash.value-totalPriceSum2;
@@ -217,7 +241,7 @@ $("#purchase").click(function () {
         $("#BalanceInput").css({
             border:"2px solid red"
         });
-        checkValidationPurch();
+        // checkValidationPurch();
     } else {
         $("#inputCash").css({
             border:"0px solid white"
@@ -228,7 +252,8 @@ $("#purchase").click(function () {
         $("#BalanceInput").css({
             border:"0px solid white"
         });
-        setOrderValue(orderIDstor);
+        ItemQTYLower(orderIDstor);
+        // setOrderValue(orderIDstor);
     }
 });
 
@@ -255,7 +280,6 @@ function allemtyset() {
     $("#TBodyOrder").empty();
     generateOrderID();
     alert("order placed");
-
 }
 
 

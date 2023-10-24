@@ -213,7 +213,7 @@
   </main>
 
   <!-- order main -->
-  <main class="container-fluid" id="orderContent" >
+  <main class="container-fluid" id="orderContent">
     <div class="container-fluid mt-2" >
       <div class="row border" >
         <div class="col-12 col-md-4  mt-3 p-3 text-primary-emphasis  border border-primary-subtle rounded-3"
@@ -223,6 +223,7 @@
             <div class="col-6">
               <label for="OrderId" class="form-label">Order Id :</label>
               <input type="text" id="OrderId" class="form-control" placeholder="Order Id" aria-label="Last name" style="background-color: #555e6a; color: white">
+              <label for="OrderId" id="OrderNotTypeId" class="form-label" style="display: none;color: #0BB256"> :</label>
             </div>
             <div class="col-6">
               <label for="date" class="form-label">Order Date :</label>
@@ -326,10 +327,9 @@
       </div>
     </div>
 
-
     <!--Table-->
     <div class="table-responsive  mt-5 " style="height: 145px; bottom:35px; position: relative;">
-      <table class="table table-bordered table-hover table-striped-columns ">
+      <table id="clickTable" class="table table-bordered table-hover table-striped-columns ">
         <thead>
           <tr class="table mt-5 p-3 text-primary-emphasis bg-primary-subtle border border-primary-subtle rounded-3">
             <th class="bg-primary-subtle">Item Code</th>
@@ -347,7 +347,6 @@
 
 
   </main>
-
 
   <script src="assets/js/jquery-3.6.1.min.js"></script>
   <script src="assets/bootstrap/js/bootstrap.min.js"></script>
@@ -367,7 +366,6 @@
   <script src="controller/validations/OrderValidations.js"></script>
 
   <script src="models/OrderDetails.js"></script>
-
 
 </body>
 </html>
